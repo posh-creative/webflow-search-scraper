@@ -2,26 +2,26 @@ name: Daily Scraper
 
 on:
   schedule:
-    - cron: '0 2 * * *' # Runs daily at 2:00 AM
-  workflow_dispatch: # Allows you to click a "Run Now" button
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # This gives GitHub permission to save the new file
+      contents: write 
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Updated to v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Updated to v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install axios cheerio xml2js
 
       - name: Run Scraper
         run: node scrape.js
@@ -30,6 +30,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add search-index.json
-          git commit -m "Auto-update search index" || echo "No changes to commit"
-          git push
+          git add search-index.json || true
+          git commit -m "Auto-update search index" || true
+          git push || true
