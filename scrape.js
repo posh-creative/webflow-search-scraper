@@ -12,12 +12,12 @@ const CONFIG =[
         sitemap: 'https://www.alliancemedical.co.uk/sitemap.xml',
         rules:[
             { match: '/scanning-centres/', priority: 100, category: 'Center' },
-            { match: '/scan-centres/', priority: 80, category: 'Center' },
-            { match: '/scan-type/', priority: 70, category: 'Service' },
-            { match: '/diagnostic-services/', priority: 60, category: 'Service' },
+            { match: '/scan-centres/', priority: 100, category: 'Center' },
+            { match: '/scan-type/', priority: 100, category: 'Service' },
+            { match: '/diagnostic-services/', priority: 100, category: 'Service' },
             { match: '/for-patients/', priority: 50, category: 'Patient Info' },
-            { match: '/for-referrers/', priority: 40, category: 'Referrer Info' },
-            { match: '/news/', priority: 30, category: 'News' },
+            { match: '/for-referrers/', priority: 50, category: 'Referrer Info' },
+            { match: '/news/', priority: 20, category: 'News' },
             { match: '/blog/', priority: 20, category: 'Blog' }
         ]
     },
@@ -59,8 +59,6 @@ async function scrapeSites() {
                                       $('meta[property="og:description"]').attr('content') || '';
                     
                     if (!description) {
-                        // Find the first paragraph that actually has a real sentence (over 40 chars)
-                        // This stops it from grabbing short addresses like "Hills Road, Cambridge..."
                         const paragraphs = $('p');
                         for (let i = 0; i < paragraphs.length; i++) {
                             const text = $(paragraphs[i]).text().trim();
@@ -72,59 +70,85 @@ async function scrapeSites() {
                     }
 
                     // ==========================================
-                    // 📸 CANDIDATE IMAGE FINDER (Pass 1)
+                    // 📸 MULTI-SOURCE IMAGE EXTRACTOR
                     // ==========================================
                     let candidates = new Set();
 
+                    // Centralized formatting for all extracted URLs
                     function addCandidate(src) {
                         if (!src) return;
+                        // Clean up CSS url() formatting (quotes and entities)
+                        let cleanSrc = src.replace(/&quot;/g, '').replace(/^['"]|['"]$/g, '').trim();
+                        
                         try {
-                            let absoluteUrl = src;
-                            if (!src.startsWith('http')) {
+                            if (!cleanSrc.startsWith('http') && !cleanSrc.startsWith('//')) {
+                                if (cleanSrc.startsWith('data:')) return; // Ignore base64
                                 const domain = new URL(url).origin;
-                                absoluteUrl = `${domain}${src.startsWith('/') ? '' : '/'}${src}`;
+                                cleanSrc = `${domain}${cleanSrc.startsWith('/') ? '' : '/'}${cleanSrc}`;
+                            } else if (cleanSrc.startsWith('//')) {
+                                cleanSrc = `https:${cleanSrc}`;
                             }
-                            candidates.add(absoluteUrl);
+                            candidates.add(cleanSrc);
                         } catch(e) {}
                     }
 
-                    // 1. Grab Meta Images
-                    let ogImage = $('meta[property="og:image"]').attr('content');
-                    if (ogImage && !ogImage.toLowerCase().includes('logo')) addCandidate(ogImage);
-
-                    let twitterImage = $('meta[name="twitter:image"]').attr('content');
-                    if (twitterImage && !twitterImage.toLowerCase().includes('logo')) addCandidate(twitterImage);
-
-                    // 2. Grab DOM Images
-                    const images = $('img');
-                    for (let i = 0; i < images.length; i++) {
-                        const imgEl = $(images[i]);
-                        let src = imgEl.attr('src') || '';
+                    // Centralized strict junk filter
+                    function isValidImage(src, classNames = '', altText = '') {
+                        if (!src) return false;
                         const srcLower = src.toLowerCase();
-                        const classNames = (imgEl.attr('class') || '').toLowerCase();
-                        const altText = (imgEl.attr('alt') || '').toLowerCase();
-                        
-                        // 🛑 RUTHLESS JUNK FILTER
-                        const isJunk = src.startsWith('data:') || 
-                                       srcLower.includes('.svg') || 
-                                       srcLower.includes('logo') || classNames.includes('logo') || altText.includes('logo') ||
+
+                        // Must be a standard photo format (Reject fonts/svgs)
+                        if (!srcLower.match(/\.(jpg|jpeg|png|webp)(\?.*)?$/)) return false;
+
+                        const isJunk = srcLower.includes('logo') || classNames.includes('logo') || altText.includes('logo') ||
                                        srcLower.includes('icon') || classNames.includes('icon') || altText.includes('icon') ||
                                        srcLower.includes('avatar') || classNames.includes('avatar') || altText.includes('avatar') ||
                                        srcLower.includes('close') || classNames.includes('close') ||
                                        srcLower.includes('arrow') || classNames.includes('arrow') ||
-                                       srcLower.includes('bg') || 
                                        srcLower.includes('placeholder') ||
                                        classNames.includes('nav') || classNames.includes('footer');
 
                         const isThumbnail = /-\d{2,3}x\d{2,3}\./.test(srcLower) || srcLower.includes('thumb');
 
-                        if (!src || isJunk || isThumbnail) continue;
-                        if (!srcLower.match(/\.(jpg|jpeg|png|webp)(\?.*)?$/)) continue;
+                        return !(isJunk || isThumbnail);
+                    }
+
+                    // --- PRIORITY 1: Meta Images ---
+                    let ogImage = $('meta[property="og:image"]').attr('content');
+                    if (isValidImage(ogImage)) addCandidate(ogImage);
+
+                    let twitterImage = $('meta[name="twitter:image"]').attr('content');
+                    if (isValidImage(twitterImage)) addCandidate(twitterImage);
+
+                    // --- PRIORITY 2: Inline CSS Backgrounds (Webflow CMS Heros) ---
+                    $('[style*="background"]').each((i, el) => {
+                        const style = $(el).attr('style');
+                        const classNames = ($(el).attr('class') || '').toLowerCase();
+                        
+                        // Extracts inside of url() 
+                        const match = style.match(/url\((.*?)\)/i);
+                        if (match && match[1]) {
+                            let src = match[1];
+                            if (isValidImage(src, classNames)) {
+                                addCandidate(src);
+                            }
+                        }
+                    });
+
+                    // --- PRIORITY 3: Standard IMG Tags ---
+                    const images = $('img');
+                    for (let i = 0; i < images.length; i++) {
+                        const imgEl = $(images[i]);
+                        const src = imgEl.attr('src') || '';
+                        const classNames = (imgEl.attr('class') || '').toLowerCase();
+                        const altText = (imgEl.attr('alt') || '').toLowerCase();
+                        
+                        if (!isValidImage(src, classNames, altText)) continue;
 
                         let finalImageSrc = src;
                         let resolvedWidth = 0;
 
-                        // Check Webflow Responsive Srcset
+                        // Check Webflow Responsive Srcset for largest size
                         const srcset = imgEl.attr('srcset');
                         if (srcset) {
                             const sources = srcset.split(',').map(s => s.trim().split(' '));
@@ -147,19 +171,29 @@ async function scrapeSites() {
                             }
                         }
 
-                        // Check HTML Width
                         if (resolvedWidth === 0) {
                             const rawWidth = imgEl.attr('width');
                             if (rawWidth) resolvedWidth = parseInt(rawWidth, 10) || 0;
                         }
 
-                        // Minimum Size Check (Must be relatively large)
-                        if (resolvedWidth > 0 && resolvedWidth < 600) {
-                            continue; 
-                        }
+                        if (resolvedWidth > 0 && resolvedWidth < 600) continue; 
 
                         addCandidate(finalImageSrc);
                     }
+
+                    // --- PRIORITY 4: Internal Style Blocks (CSS Backgrounds) ---
+                    $('style').each((i, el) => {
+                        const cssText = $(el).html();
+                        if (cssText) {
+                            // Find all URLs in the CSS block
+                            const matches = cssText.matchAll(/url\((.*?)\)/gi);
+                            for (const match of matches) {
+                                if (match[1] && isValidImage(match[1])) {
+                                    addCandidate(match[1]);
+                                }
+                            }
+                        }
+                    });
                     // ==========================================
 
                     // Assign Priority & Category
@@ -184,7 +218,6 @@ async function scrapeSites() {
                         }
                     }
 
-                    // Save raw data with all image candidates
                     rawPages.push({
                         title: title.trim(),
                         url: url, 
@@ -207,22 +240,20 @@ async function scrapeSites() {
             
             const imageFrequency = {};
             
-            // Count how many times every image appears across the ENTIRE site
             rawPages.forEach(page => {
                 page.candidates.forEach(img => {
                     imageFrequency[img] = (imageFrequency[img] || 0) + 1;
                 });
             });
 
-            // Assign the final image
             const searchIndex = rawPages.map(page => {
                 let finalImage = "";
                 
                 for (const img of page.candidates) {
-                    // 🚨 If an image appears on more than 4 pages, it is a global template banner! REJECT IT!
+                    // 🚨 Reject templates: If it appears on > 4 pages, kill it!
                     if (imageFrequency[img] <= 4) {
                         finalImage = img;
-                        break; // We found the unique image for this page!
+                        break; 
                     }
                 }
 
