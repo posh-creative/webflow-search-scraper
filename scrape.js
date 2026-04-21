@@ -43,7 +43,63 @@ async function scrapeSites() {
             const sitemapObj = await parser.parseStringPromise(sitemapXml);
 
             const urls = sitemapObj.urlset.url.map(entry => entry.loc[0]);
-            console.log(`Found ${urls.length} URLs for ${site.name}. Scraping pages...`);
+            console.log(`Found ${urls.length} URLs for ${site.name}.`);
+
+            // ==========================================
+            // 🎨 PRE-SCRAPE: GLOBAL CSS EXTRACTOR
+            // Webflow puts background classes in an external CSS file. 
+            // We download the CSS file once and map classes to their image URLs.
+            // ==========================================
+            console.log(`🎨 Extracting global Webflow CSS for background images...`);
+            let classToImage = {};
+            try {
+                const domain = new URL(site.sitemap).origin;
+                const { data: homeHtml } = await axios.get(domain);
+                const $home = cheerio.load(homeHtml);
+                const cssLinks = [];
+                
+                $home('link[rel="stylesheet"]').each((i, el) => {
+                    const href = $home(el).attr('href');
+                    if (href && !href.includes('fonts') && !href.includes('typekit')) {
+                        const absoluteHref = href.startsWith('http') ? href : href.startsWith('//') ? `https:${href}` : `${domain}${href.startsWith('/') ? '' : '/'}${href}`;
+                        cssLinks.push(absoluteHref);
+                    }
+                });
+
+                for (const cssUrl of cssLinks) {
+                    try {
+                        const { data: cssText } = await axios.get(cssUrl);
+                        const cssBlocks = cssText.split('}');
+                        
+                        cssBlocks.forEach(block => {
+                            if (block.includes('background') && block.includes('url(')) {
+                                const parts = block.split('{');
+                                if (parts.length >= 2) {
+                                    const selectors = parts[0].trim();
+                                    const rules = parts.slice(1).join('{'); 
+                                    
+                                    const urlMatch = rules.match(/url\(['"]?(.*?)['"]?\)/i);
+                                    if (urlMatch && urlMatch[1]) {
+                                        let imgUrl = urlMatch[1].replace(/&quot;/g, '').replace(/^['"]|['"]$/g, '').trim();
+                                        const classMatches = selectors.match(/\.([a-zA-Z0-9_-]+)/g);
+                                        if (classMatches) {
+                                            classMatches.forEach(cls => {
+                                                const cleanClass = cls.substring(1);
+                                                classToImage[cleanClass] = imgUrl; // Maps class name to image URL
+                                            });
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    } catch(e) { }
+                }
+                console.log(`✅ Found ${Object.keys(classToImage).length} class-based background images!`);
+            } catch(err) {
+                console.log(`⚠️ Could not extract global CSS: ${err.message}`);
+            }
+
+            console.log(`Scraping pages...`);
 
             for (const url of urls) {
                 try {
@@ -52,9 +108,6 @@ async function scrapeSites() {
 
                     const title = $('title').text() || $('h1').first().text();
                     
-                    // ==========================================
-                    // 📝 BETTER DESCRIPTION FINDER
-                    // ==========================================
                     let description = $('meta[name="description"]').attr('content') || 
                                       $('meta[property="og:description"]').attr('content') || '';
                     
@@ -74,15 +127,13 @@ async function scrapeSites() {
                     // ==========================================
                     let candidates = new Set();
 
-                    // Centralized formatting for all extracted URLs
                     function addCandidate(src) {
                         if (!src) return;
-                        // Clean up CSS url() formatting (quotes and entities)
                         let cleanSrc = src.replace(/&quot;/g, '').replace(/^['"]|['"]$/g, '').trim();
                         
                         try {
                             if (!cleanSrc.startsWith('http') && !cleanSrc.startsWith('//')) {
-                                if (cleanSrc.startsWith('data:')) return; // Ignore base64
+                                if (cleanSrc.startsWith('data:')) return; 
                                 const domain = new URL(url).origin;
                                 cleanSrc = `${domain}${cleanSrc.startsWith('/') ? '' : '/'}${cleanSrc}`;
                             } else if (cleanSrc.startsWith('//')) {
@@ -92,12 +143,10 @@ async function scrapeSites() {
                         } catch(e) {}
                     }
 
-                    // Centralized strict junk filter
                     function isValidImage(src, classNames = '', altText = '') {
                         if (!src) return false;
                         const srcLower = src.toLowerCase();
 
-                        // Must be a standard photo format (Reject fonts/svgs)
                         if (!srcLower.match(/\.(jpg|jpeg|png|webp)(\?.*)?$/)) return false;
 
                         const isJunk = srcLower.includes('logo') || classNames.includes('logo') || altText.includes('logo') ||
@@ -117,25 +166,29 @@ async function scrapeSites() {
                     let ogImage = $('meta[property="og:image"]').attr('content');
                     if (isValidImage(ogImage)) addCandidate(ogImage);
 
-                    let twitterImage = $('meta[name="twitter:image"]').attr('content');
-                    if (isValidImage(twitterImage)) addCandidate(twitterImage);
-
-                    // --- PRIORITY 2: Inline CSS Backgrounds (Webflow CMS Heros) ---
+                    // --- PRIORITY 2: Inline CSS Backgrounds ---
                     $('[style*="background"]').each((i, el) => {
                         const style = $(el).attr('style');
                         const classNames = ($(el).attr('class') || '').toLowerCase();
-                        
-                        // Extracts inside of url() 
                         const match = style.match(/url\((.*?)\)/i);
                         if (match && match[1]) {
-                            let src = match[1];
-                            if (isValidImage(src, classNames)) {
-                                addCandidate(src);
-                            }
+                            if (isValidImage(match[1], classNames)) addCandidate(match[1]);
                         }
                     });
 
-                    // --- PRIORITY 3: Standard IMG Tags ---
+                    // --- PRIORITY 3: External Webflow CSS Backgrounds (Using our Dictionary!) ---
+                    $('[class]').each((i, el) => {
+                        const classes = ($(el).attr('class') || '').split(/\s+/);
+                        classes.forEach(cls => {
+                            if (classToImage[cls]) {
+                                if (isValidImage(classToImage[cls], cls)) {
+                                    addCandidate(classToImage[cls]);
+                                }
+                            }
+                        });
+                    });
+
+                    // --- PRIORITY 4: Standard IMG Tags ---
                     const images = $('img');
                     for (let i = 0; i < images.length; i++) {
                         const imgEl = $(images[i]);
@@ -148,7 +201,6 @@ async function scrapeSites() {
                         let finalImageSrc = src;
                         let resolvedWidth = 0;
 
-                        // Check Webflow Responsive Srcset for largest size
                         const srcset = imgEl.attr('srcset');
                         if (srcset) {
                             const sources = srcset.split(',').map(s => s.trim().split(' '));
@@ -180,21 +232,6 @@ async function scrapeSites() {
 
                         addCandidate(finalImageSrc);
                     }
-
-                    // --- PRIORITY 4: Internal Style Blocks (CSS Backgrounds) ---
-                    $('style').each((i, el) => {
-                        const cssText = $(el).html();
-                        if (cssText) {
-                            // Find all URLs in the CSS block
-                            const matches = cssText.matchAll(/url\((.*?)\)/gi);
-                            for (const match of matches) {
-                                if (match[1] && isValidImage(match[1])) {
-                                    addCandidate(match[1]);
-                                }
-                            }
-                        }
-                    });
-                    // ==========================================
 
                     // Assign Priority & Category
                     let priority = 10;
@@ -250,8 +287,8 @@ async function scrapeSites() {
                 let finalImage = "";
                 
                 for (const img of page.candidates) {
-                    // 🚨 Reject templates: If it appears on > 4 pages, kill it!
-                    if (imageFrequency[img] <= 4) {
+                    // 🚨 If it appears on > 8 pages, it's a global placeholder. Kill it!
+                    if (imageFrequency[img] <= 8) {
                         finalImage = img;
                         break; 
                     }
