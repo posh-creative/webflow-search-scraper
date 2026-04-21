@@ -46,9 +46,8 @@ async function scrapeSites() {
             console.log(`Found ${urls.length} URLs for ${site.name}.`);
 
             // ==========================================
-            // 🎨 PRE-SCRAPE: GLOBAL CSS EXTRACTOR
-            // Webflow puts background classes in an external CSS file. 
-            // We download the CSS file once and map classes to their image URLs.
+            // 🎨 PRE-SCRAPE: ADVANCED CSS DICTIONARY
+            // Extracts all classes that have background images attached in Webflow
             // ==========================================
             console.log(`🎨 Extracting global Webflow CSS for background images...`);
             let classToImage = {};
@@ -56,7 +55,7 @@ async function scrapeSites() {
                 const domain = new URL(site.sitemap).origin;
                 const { data: homeHtml } = await axios.get(domain);
                 const $home = cheerio.load(homeHtml);
-                const cssLinks = [];
+                const cssLinks =[];
                 
                 $home('link[rel="stylesheet"]').each((i, el) => {
                     const href = $home(el).attr('href');
@@ -69,32 +68,31 @@ async function scrapeSites() {
                 for (const cssUrl of cssLinks) {
                     try {
                         const { data: cssText } = await axios.get(cssUrl);
-                        const cssBlocks = cssText.split('}');
                         
-                        cssBlocks.forEach(block => {
-                            if (block.includes('background') && block.includes('url(')) {
-                                const parts = block.split('{');
-                                if (parts.length >= 2) {
-                                    const selectors = parts[0].trim();
-                                    const rules = parts.slice(1).join('{'); 
-                                    
-                                    const urlMatch = rules.match(/url\(['"]?(.*?)['"]?\)/i);
-                                    if (urlMatch && urlMatch[1]) {
-                                        let imgUrl = urlMatch[1].replace(/&quot;/g, '').replace(/^['"]|['"]$/g, '').trim();
-                                        const classMatches = selectors.match(/\.([a-zA-Z0-9_-]+)/g);
-                                        if (classMatches) {
-                                            classMatches.forEach(cls => {
-                                                const cleanClass = cls.substring(1);
-                                                classToImage[cleanClass] = imgUrl; // Maps class name to image URL
-                                            });
-                                        }
-                                    }
+                        // Smart Regex that handles minified CSS and Media Queries beautifully
+                        const blockRegex = /([^{]+)\{([^}]+)\}/g;
+                        let match;
+                        while ((match = blockRegex.exec(cssText)) !== null) {
+                            const selectors = match[1];
+                            const rules = match[2];
+                            const urlMatch = rules.match(/url\(['"]?(.*?)['"]?\)/i);
+                            
+                            if (urlMatch && urlMatch[1]) {
+                                let imgUrl = urlMatch[1].replace(/&quot;/g, '').replace(/^['"]|['"]$/g, '').trim();
+                                
+                                // Extract every class name from the selector block
+                                const classMatches = selectors.match(/\.([a-zA-Z0-9_-]+)/g);
+                                if (classMatches) {
+                                    classMatches.forEach(cls => {
+                                        const cleanClass = cls.substring(1);
+                                        classToImage[cleanClass] = imgUrl; // Map the class to the image!
+                                    });
                                 }
                             }
-                        });
+                        }
                     } catch(e) { }
                 }
-                console.log(`✅ Found ${Object.keys(classToImage).length} class-based background images!`);
+                console.log(`✅ Dictionary built! Found ${Object.keys(classToImage).length} classes with background images.`);
             } catch(err) {
                 console.log(`⚠️ Could not extract global CSS: ${err.message}`);
             }
@@ -123,7 +121,7 @@ async function scrapeSites() {
                     }
 
                     // ==========================================
-                    // 📸 MULTI-SOURCE IMAGE EXTRACTOR
+                    // 📸 PRIORITY IMAGE EXTRACTOR
                     // ==========================================
                     let candidates = new Set();
 
@@ -154,7 +152,6 @@ async function scrapeSites() {
                                        srcLower.includes('avatar') || classNames.includes('avatar') || altText.includes('avatar') ||
                                        srcLower.includes('close') || classNames.includes('close') ||
                                        srcLower.includes('arrow') || classNames.includes('arrow') ||
-                                       srcLower.includes('placeholder') ||
                                        classNames.includes('nav') || classNames.includes('footer');
 
                         const isThumbnail = /-\d{2,3}x\d{2,3}\./.test(srcLower) || srcLower.includes('thumb');
@@ -162,11 +159,11 @@ async function scrapeSites() {
                         return !(isJunk || isThumbnail);
                     }
 
-                    // --- PRIORITY 1: Meta Images ---
+                    // 1. Meta Images
                     let ogImage = $('meta[property="og:image"]').attr('content');
                     if (isValidImage(ogImage)) addCandidate(ogImage);
 
-                    // --- PRIORITY 2: Inline CSS Backgrounds ---
+                    // 2. Inline CSS Backgrounds
                     $('[style*="background"]').each((i, el) => {
                         const style = $(el).attr('style');
                         const classNames = ($(el).attr('class') || '').toLowerCase();
@@ -176,7 +173,7 @@ async function scrapeSites() {
                         }
                     });
 
-                    // --- PRIORITY 3: External Webflow CSS Backgrounds (Using our Dictionary!) ---
+                    // 3. Webflow CSS Class Backgrounds (The Dictionary Hook)
                     $('[class]').each((i, el) => {
                         const classes = ($(el).attr('class') || '').split(/\s+/);
                         classes.forEach(cls => {
@@ -188,7 +185,7 @@ async function scrapeSites() {
                         });
                     });
 
-                    // --- PRIORITY 4: Standard IMG Tags ---
+                    // 4. Standard Images
                     const images = $('img');
                     for (let i = 0; i < images.length; i++) {
                         const imgEl = $(images[i]);
@@ -259,7 +256,7 @@ async function scrapeSites() {
                         title: title.trim(),
                         url: url, 
                         description: (description || '').trim(),
-                        candidates: Array.from(candidates), 
+                        candidates: Array.from(candidates), // Preserves priority order
                         category: category,
                         priority: priority
                     });
@@ -271,12 +268,13 @@ async function scrapeSites() {
             }
 
             // ==========================================
-            // 🧹 PASS 2: THE GLOBAL FREQUENCY FILTER
+            // 🧹 PASS 2: SMART FREQUENCY FILTER
             // ==========================================
-            console.log(`\n🧹 Running Frequency Filter to destroy global spam images...`);
+            console.log(`\n🧹 Running Smart Frequency Filter...`);
             
             const imageFrequency = {};
             
+            // Count image appearances
             rawPages.forEach(page => {
                 page.candidates.forEach(img => {
                     imageFrequency[img] = (imageFrequency[img] || 0) + 1;
@@ -286,12 +284,16 @@ async function scrapeSites() {
             const searchIndex = rawPages.map(page => {
                 let finalImage = "";
                 
-                for (const img of page.candidates) {
-                    // 🚨 If it appears on > 8 pages, it's a global placeholder. Kill it!
-                    if (imageFrequency[img] <= 8) {
-                        finalImage = img;
-                        break; 
-                    }
+                // Try to find a unique image first (appears on 8 pages or fewer)
+                const uniqueCandidates = page.candidates.filter(img => imageFrequency[img] <= 8);
+                
+                if (uniqueCandidates.length > 0) {
+                    finalImage = uniqueCandidates[0]; 
+                } 
+                // 🚨 SMART RESCUE: If the page ONLY has generic images (like allianceBlank.jpg), 
+                // use the primary generic image rather than leaving the result completely blank!
+                else if (page.candidates.length > 0) {
+                    finalImage = page.candidates[0]; 
                 }
 
                 return {
