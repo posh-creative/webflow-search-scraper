@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box !important;
+    padding: 0px;
+    margin: 0px;
+    font-family: hk-nova-reg;
+
+}
+
+@font-face {
+    font-family: hk-nova-reg;
+    src: url(fonts/HKNova-MediumR.ttf);
+}
+
+body {
+    background-color: white;
+    color: #10061a;
+    height: 10000px;
+
+}
+
+.sticky-nav{
+
+    width:100%;
+    height:auto;
+    background-color: #5d47d4;
+    position: fixed;
+    top:0px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+padding-left: 200px;
+padding-right: 200px;
+padding-top: 40px;
+padding-bottom: 40px;;
+box-sizing: border-box;
+font-size: 12px!important;
+font-weight: 900!important;
+transition: 0.3s ease all;
+}
+
+.sticky-nav p{
+    cursor:pointer;
+    transition: 0.3s ease all;
+    margin-bottom: 15px;
+}
+.sticky-nav p:hover{
+    color:black;
+}
+
+.nav-up {
+    top: -120px;
+  }
+/* media query */
+
+@media (max-width: 600px) {
+  .sticky-nav {
+    
+    padding-top: 8px;
+padding-bottom: 8px;
+    flex-direction: column;
+   
+  }
+
+  .sticky-nav p{
+  
+   margin-bottom: 8px;
+   text-align: center;
+  mix-blend-mode:
+}
+
+.nav-up {
+    top: -180px!important;
+  }
+}
+
+.wrapper{
+    width:400px;
+    height:400px;
+ overflow: hidden;
+    position: relative;
+    left:39%;
+    top:2%;
+}
+.movable{
+    width:0px;
+    height:400px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    display:flex;
+    
+
+}
+
+.movable-column{
+height:400px;
+width:400px;
+
+background-color: red;
+}
+
+#movable-column-2{
+    
+    background-color: rgb(0, 191, 255);
+    }
+
+    #movable-column-3{
+    
+        background-color: rgb(0, 255, 166);
+        }
+        
+.left-button{
+    width:60px;
+    height:60px;
+    background-color: rgb(0, 119, 255);
+    position: absolute;
+    left:40%;
+    top:5%;
+    cursor:pointer;
+}
+
+.right-button{
+    width:60px;
+    height:60px;
+    background-color: rgb(0, 119, 255);
+    position: absolute;
+    left:60%;
+    top:5%;
+    cursor:pointer;
+}
