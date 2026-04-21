@@ -3,22 +3,22 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk",
     "description": "Alliance Medical are leading the way in high-quality diagnostic imaging. For over 30 years, our experts have combined service excellence and innovatio...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/641d6d886cafd03c86bff40c_armed_forces_covenant.png",
     "category": "Page",
     "priority": 10
   },
   {
     "title": "All scan centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/all-scan-centres",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68c2d6c89611142be3d58c22_ALL-MED-OldhamCDC-02414%20Large%20Medium.jpeg",
     "category": "Page",
     "priority": 10
   },
   {
     "title": "Calcium Scoring centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/calcium-scoring-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
+    "description": "North West Heart Centre (Entrance 6 or 7), Southmoor Road, Manchester, M23 9LT...",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -34,8 +34,8 @@
   {
     "title": "Cardiac CT centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/cardiac-ct-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "Blackbrook Business Park, Blackbrook Park Ave, Taunton, TA1 2PX...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -50,8 +50,8 @@
   {
     "title": "Cardiac MRI centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/cardiac-mri-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "University Hospital of North Tees, Hardwick Road, Stockton-on-Tees, Cleveland, TS19 8PE...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -66,8 +66,8 @@
   {
     "title": "MRI centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/centre-list",
-    "description": "68 Harley Street, London, W1G 7HE...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68c2d6c89611142be3d58c22_ALL-MED-OldhamCDC-02414%20Large%20Medium.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -82,8 +82,8 @@
   {
     "title": "Colon CT centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/colon-ct-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "Blackbrook Business Park, Blackbrook Park Ave, Taunton, TA1 2PX...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -107,15 +107,15 @@
     "title": "Coronavirus",
     "url": "https://www.alliancemedical.co.uk/for-patients/coronavirus",
     "description": "To help to prevent the spread of COVID-19 virus please take particular care to follow our Hands, Face and Space Requirements....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/617ad03568b09a5511fbc8a3_covid-image-2.jpeg",
     "category": "Patient Info",
     "priority": 50
   },
   {
     "title": "CT scan centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/ct-scan-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "Corby Community Diagnostic Centre, Broadleaf House, Willow Brook Road, Corby, NN17 2F...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68c2d6c89611142be3d58c22_ALL-MED-OldhamCDC-02414%20Large%20Medium.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -147,7 +147,7 @@
     "title": "Diagnostic services overview",
     "url": "https://www.alliancemedical.co.uk/for-patients/diagnostic-services/diagnostic-services-overview",
     "description": "A personal and highly professional cardiac imaging service with high-quality diagnostics at low radiation doses...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63593660134877c7322683ee_cardiac-imaging.jpg",
     "category": "Service",
     "priority": 60
   },
@@ -162,7 +162,7 @@
   {
     "title": "EOS CT",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/eos-ct",
-    "description": "68 Harley Street, London, W1G 7HE...",
+    "description": "Please reset the regions filter or select a different scan type....",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -194,7 +194,7 @@
   {
     "title": "Fluoroscopy centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/fluoroscopy-centres",
-    "description": "10-11 Bulstrode Place, London, W1U 2HX...",
+    "description": "Please reset the regions filter or select a different scan type....",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -202,7 +202,7 @@
   {
     "title": "GE Discovery",
     "url": "https://www.alliancemedical.co.uk/what-we-do/diagnostic-imaging/ge-discovery",
-    "description": "At Alliance Medical Marylebone...",
+    "description": "33% faster scan times at reduced radiation doses with no impact on image quality...",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -219,14 +219,14 @@
     "title": "Governance",
     "url": "https://www.alliancemedical.co.uk/about-us/governance",
     "description": "The Companies (Miscellaneous Reporting) Regulations 2018 require Alliance Medical Limited to publish a statement explaining how the Directors have giv...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/635c148194ff6d5d773549d9_mi-4.jpg",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/61e01bc70876b0948910d483_wres.jpg",
     "category": "Page",
     "priority": 10
   },
   {
     "title": "Heartflow centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/heartflow-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
+    "description": "North West Heart Centre (Entrance 6 or 7), Southmoor Road, Manchester, M23 9LT...",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -243,7 +243,7 @@
     "title": "In-house services",
     "url": "https://www.alliancemedical.co.uk/what-we-do/diagnostic-imaging/in-house-services",
     "description": "Create an imaging department that becomes an integral part of your hospital, where you pay only for the scans and services you choose....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/61c9f174702a54326ef6fb71_inhouse-1-860x480px%20(1).jpg",
     "category": "Page",
     "priority": 10
   },
@@ -258,7 +258,7 @@
   {
     "title": "Istituto Salus",
     "url": "https://www.alliancemedical.co.uk/cdc/cdc-case-studies/istituto-salus",
-    "description": "Via Gestro2116129 GenovaItaly...",
+    "description": "Tel: 010 58 66 42Email: isalus@alliancemedical.it...",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -322,8 +322,8 @@
   {
     "title": "MR Arthrogram centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/mr-arthrogram-centres",
-    "description": "10-11 Bulstrode Place, London, W1U 2HX...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -338,7 +338,7 @@
   {
     "title": "MRI Breast Scan centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/mri-breast-scan-centres",
-    "description": "10-11 Bulstrode Place, London, W1U 2HX...",
+    "description": "Chase Farm Hospital, The Ridgeway, Enfield, Middlesex, EN2 8JL...",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -362,7 +362,7 @@
   {
     "title": "MRI Research centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/mri-research-centres",
-    "description": "We're sorry, no scan centres are found....",
+    "description": "Please reset the regions filter or select a different scan type....",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -370,7 +370,7 @@
   {
     "title": "MRI Spectroscopy centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/mri-spectroscopy-centres",
-    "description": "We're sorry, no scan centres are found....",
+    "description": "Please reset the regions filter or select a different scan type....",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -386,8 +386,8 @@
   {
     "title": "Musculoskeletal centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/musculoskeletal-centres",
-    "description": "68 Harley Street, London, W1G 7HE...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -418,7 +418,7 @@
   {
     "title": "Open and Upright MRI",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/open-and-upright-mri",
-    "description": "68 Harley Street, London, W1G 7HE...",
+    "description": "Please reset the regions filter or select a different scan type....",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -451,7 +451,7 @@
     "title": "Our mission, our why",
     "url": "https://www.alliancemedical.co.uk/about-us/our-mission-our-why",
     "description": "To support people and partners through the healthcare pathway to enable them to seize life’s opportunities and to improve life expectancy...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/621dedcf3ef4da6eda55061d_AM-Plymouth-00897-800x637px.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -459,7 +459,7 @@
     "title": "Our story",
     "url": "https://www.alliancemedical.co.uk/about-us/our-story",
     "description": "Alliance Medical Limited is Europe’s leading independent provider of imaging services operating across the continent – in the UK, Germany, Ireland, It...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6209068b1230fe3a690a11eb_our-story.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -467,7 +467,7 @@
     "title": "Our technology",
     "url": "https://www.alliancemedical.co.uk/what-we-do/diagnostic-imaging/our-technology",
     "description": "Each of our scanners is truly world class. We continually invest in cutting edge technology to ensure we remain at the very forefront of diagnostic im...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/635c139892f395239874a1e5_magentom-2.jpeg",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/635c105edfa1f7758ac180c4_GE-750.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -475,7 +475,7 @@
     "title": "About us",
     "url": "https://www.alliancemedical.co.uk/about-us/overview",
     "description": "We support people and partners through the healthcare pathway so they can seize life's opportunities and improve life expectancy....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/61cc3bcc95276408ce3eb1ed_about-us.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -491,7 +491,7 @@
     "title": "For referrers overview",
     "url": "https://www.alliancemedical.co.uk/for-referrers/overview",
     "description": "For referrals to the NHSE National PET-CT Service, Alliance Medical uses the Royal College of Radiologists’ Evidence-Based Indications for FDG PET-CT ...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/68f0bcfa6b7b5b26f61be1ec_Use-ofPET-CT2.png",
     "category": "Referrer Info",
     "priority": 40
   },
@@ -515,7 +515,7 @@
     "title": "Case studies",
     "url": "https://www.alliancemedical.co.uk/cdc/cdc-case-studies/overview",
     "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/61c9be094971b66ffaa038fd_istituto-cesalpino-terontola-2.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -547,7 +547,7 @@
     "title": "Partnerships",
     "url": "https://www.alliancemedical.co.uk/about-us/partnerships",
     "description": "Efficiencies improved with e-referral system designed for NHS...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61dff26093f7b314a05a64b9_nhs-trusts.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -562,8 +562,8 @@
   {
     "title": "PET/CT centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/pet-ct-centres",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "",
+    "description": "William Harvey Hospital, Kennington Road, Ashford, Kent, TN24 0LZ...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/65d4b8f5f7ce9a19dfce555c_exeter111-min.png",
     "category": "Page",
     "priority": 10
   },
@@ -610,7 +610,7 @@
   {
     "title": "Scan glossary",
     "url": "https://www.alliancemedical.co.uk/for-patients/scan-glossary",
-    "description": "Cells that are alive and functioning....",
+    "description": "Tissue that is alive and functioning. In PET scanning, the radiopharmaceutical FDG builds up in areas that are very active, such as cancer cells....",
     "image": "",
     "category": "Patient Info",
     "priority": 50
@@ -618,7 +618,7 @@
   {
     "title": "Search Results",
     "url": "https://www.alliancemedical.co.uk/search",
-    "description": "...",
+    "description": "",
     "image": "",
     "category": "Main Page",
     "priority": 100
@@ -634,7 +634,7 @@
   {
     "title": "Studio Radiologico Centocannoni",
     "url": "https://www.alliancemedical.co.uk/cdc/cdc-case-studies/studio-radiologico-centocannoni",
-    "description": "Via del Legno1915121 AlessandriaItaly...",
+    "description": "Tel: 0131 24 19 00Email: cc@alliancemedical.it...",
     "image": "",
     "category": "Page",
     "priority": 10
@@ -643,7 +643,7 @@
     "title": "Sustainability",
     "url": "https://www.alliancemedical.co.uk/about-us/sustainability",
     "description": "Alliance Medical is a leading national provider of diagnostic imaging services....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/633dccb2731997a94768e82c_sustainability-2.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -667,15 +667,15 @@
     "title": "Turner Diagnostic Centre",
     "url": "https://www.alliancemedical.co.uk/cdc/cdc-case-studies/turner-diagnostic-centre",
     "description": "Colchester HospitalTurner RoadColchesterEssex CO4 5JL...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/650b14b0c1b737a276aeddf1_sw.jpg",
     "category": "Page",
     "priority": 10
   },
   {
     "title": "Ultrasound centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/ultrasound-centres",
-    "description": "10-11 Bulstrode Place, London, W1U 2HX...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63650fcd2942035639a29fd4_allaince_taunton%201.jpg",
+    "description": "Oldham Community Diagnostic Centre, Salmon Fields, Royton, Oldham, OL2 6JG...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -690,8 +690,8 @@
   {
     "title": "X-ray centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/x-ray-centres",
-    "description": "10-11 Bulstrode Place, London, W1U 2HX...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "description": "King Arthur Court, Cheshunt, Hertfordshire, EN8 8XN...",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -707,7 +707,7 @@
     "title": "Your patient journey",
     "url": "https://www.alliancemedical.co.uk/for-patients/your-patient-journey",
     "description": "Your doctor or clinician sends your imaging referral to Alliance Medical....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/617a889643b533eb77b6382e_patient-journey-1%20(1).jpg",
     "category": "Patient Info",
     "priority": 50
   },
@@ -715,7 +715,7 @@
     "title": "Community Diagnostic Centres",
     "url": "https://www.alliancemedical.co.uk/find-centre/centres/community-diagnostic-centre-locations",
     "description": "North Oval, Kings Heath, Northampton, NN5 7LN...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68909b1e4554dbebc3852a7c_66a0e0764casfcdeb0b0a3312_Alliance%20Kings%20Heath%20Installation_111%202%20Medium.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -731,7 +731,7 @@
     "title": "Mobile solutions",
     "url": "https://www.alliancemedical.co.uk/what-we-do/diagnostic-imaging/mobile-services",
     "description": "Alliance Medical have been providing mobile diagnostics for over 33 years. Tailored, high-quality MRI, CT and PET-CT Mobiles available with rapid deployment to reduce waiting lists and maximise patient throughput. Expandable CT Mobile Medical Plus, relocatable units and mobile villages available.",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/644b8ed22bb74843f024d44d_DJI_0771-minX.png",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/677e76866a9e02e31eaafbe8_64b10d6e0cf95312aa6ad3b0_scanner%20team%201-min%20Large.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -739,7 +739,7 @@
     "title": "PET-CT Neurology",
     "url": "https://www.alliancemedical.co.uk/pet-ct-neurology",
     "description": "Our bespoke imaging solution is tailored to your exacting requirements and deployed rapidly across the country, whenever you need us. Choose from our range of reliable, high-quality mobiles, our innovative and expandable CT Mobile Medical Plus fleet, relocatable units, or even a mobile village.",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/61e01bc70876b0948910d483_wres.jpg",
     "category": "Main Page",
     "priority": 100
   },
@@ -771,7 +771,7 @@
     "title": "PSMA",
     "url": "https://www.alliancemedical.co.uk/psma",
     "description": "Our bespoke imaging solution is tailored to your exacting requirements and deployed rapidly across the country, whenever you need us. Choose from our range of reliable, high-quality mobiles, our innovative and expandable CT Mobile Medical Plus fleet, relocatable units, or even a mobile village.",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/644b8ed22bb74843f024d44d_DJI_0771-minX.png",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6564ce06cb5e1c81c03c7fa7_psma_top_image.jpg",
     "category": "Main Page",
     "priority": 100
   },
@@ -802,7 +802,7 @@
   {
     "title": "BNMS",
     "url": "https://www.alliancemedical.co.uk/rsm",
-    "description": "Monday 16 Mar 2026...",
+    "description": "Discuss how we’re unlocking the power of PET-CT, advancing digital technology, and improving patient pathways and tracer availability....",
     "image": "",
     "category": "Main Page",
     "priority": 100
@@ -835,7 +835,7 @@
     "title": "Targeted Lung Cancer Screening",
     "url": "https://www.alliancemedical.co.uk/targeted-lung-cancer-screening",
     "description": "LCS is a cornerstone of Alliance Medical’s commitment to early cancer detection. Bringing diagnostics closer to patients isn’t just about greater acce...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6807996ee7d547387ac2649f_sheffield-teaching-hospitals%201.png",
     "category": "Main Page",
     "priority": 100
   },
@@ -843,7 +843,7 @@
     "title": "PET-CT",
     "url": "https://www.alliancemedical.co.uk/pet-ct",
     "description": "At Alliance Medical, we're making advanced PET-CT imaging accessible to hundreds of thousands of patients across the UK - helping detect diseases earl...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/65a92ea818e8cbe027805984_AM-London-DSC02048%201-min.jpg",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/662a619ae3634676e3b03caa_London%20Ma%20-%20GE%20Discovery%20MI%20Gen%202%20Digital%20PET-CT%201.jpeg",
     "category": "Main Page",
     "priority": 100
   },
@@ -891,7 +891,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/cardiac",
     "description": "Alliance Medical delivers a personal and highly professional cardiac imaging service to its referrers. We have an ethos of high-quality diagnostic ima...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63593660134877c7322683ee_cardiac-imaging.jpg",
     "category": "Service",
     "priority": 60
   },
@@ -907,7 +907,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/gastrointestinal",
     "description": "Most colon cancers develop from pre-cancerous nodular growths, called polyps, found in the lining of the bowel. They grow slowly and can gradually bec...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fcf1ebf391c0c1099a056_colon-scan.jpg",
     "category": "Service",
     "priority": 60
   },
@@ -915,7 +915,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/genitourinary",
     "description": "Genitourinary refers to the urinary and genital organs. Urology is the branch of medicine concerned with the urinary tract in both male and females, a...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596b4c2a7fbe47d2c7b14c_genito-1.jpeg",
     "category": "Service",
     "priority": 60
   },
@@ -923,7 +923,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/gynaecological",
     "description": "For women with concerns about their gynaecological health, ultrasound provides detailed information on a multitude of symptoms. Ultrasound scans are v...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596cd375f26462ea628605_gynae-1.jpeg",
     "category": "Service",
     "priority": 60
   },
@@ -931,7 +931,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/lung-disease",
     "description": "Lung disease kills over 120,000 people each year in the UK and around a third of these die of lung cancer. Early detection is vital and proven to sign...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596addcbf06de31707a1fe_lung-disease.jpg",
     "category": "Service",
     "priority": 60
   },
@@ -939,7 +939,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/musculoskeletal",
     "description": "Joint and spinal injuries are common and can cause profound discomfort and disabling symptoms. Most of us will experience an episode of back or joint ...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596d1d75f2647ac9628e11_msk.jpeg",
     "category": "Service",
     "priority": 60
   },
@@ -947,7 +947,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/neurological",
     "description": "Neurological symptoms such as persistent headaches or numbness are a frequent but worrying condition. While there are many possible causes, they often...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635966265515c9107225493e_neuro-1.jpeg",
     "category": "Service",
     "priority": 60
   },
@@ -955,7 +955,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/osteoporosis",
     "description": "Osteoporosis is a condition that weakens bones, making them fragile and more likely to break. It develops slowly and is often only diagnosed after bre...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596de975f2647b90629e57_osteo-1.jpeg",
     "category": "Service",
     "priority": 60
   },
@@ -963,14 +963,14 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/diagnostic-services/vascular",
     "description": "Vascular disease refers to disorders of the peripheral arterial circulation outside of the brain or heart. It can be assessed by our advanced scanning...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596e946e621b1d9f7f6ec9_vascular.jpg",
     "category": "Service",
     "priority": 60
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/alliance-medical-harley-street",
-    "description": "The Aquilion ONE PRISM Edition CT...",
+    "description": "Alliance Medical Harley Street provides patients with fast access to high quality CT, Open MRI and EOS imaging and diagnostic services. We welcome pat...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -978,7 +978,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/alliance-medical-marylebone",
-    "description": "GE Discovery MI Gen 2 Digital PET-CT...",
+    "description": "MRI, Ultrasound and X-ray and Cardiac MRI...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -986,7 +986,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/ashford-pet-ct-centre",
-    "description": "GE Discovery MI DR PET-CT...",
+    "description": "Located in William Harvey Hospital, we provide fast access to high-quality PET-CT diagnostics for NHS, private medical insurance and self-pay patients...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -994,7 +994,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/bristol-pet-ct-centre",
-    "description": "GE Discovery 710 PET-CT...",
+    "description": "Located in Bristol’s Southmead Hospital, Alliance Medical Bristol PET-CT Centre provides fast access to high-quality PET-CT diagnostics for NHS, Priva...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1002,15 +1002,15 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/corby-community-diagnostic-centre",
-    "description": "CT and MRI...",
-    "image": "",
+    "description": "Increased capacity for local NHS patients...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68c2d6c89611142be3d58c22_ALL-MED-OldhamCDC-02414%20Large%20Medium.jpeg",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/denmark-hill-pet-ct-centre",
-    "description": "GE Discovery 710 PET-CT...",
+    "description": "Alliance Medical Denmark Hill Centre provides fast access to high-quality PET-CT diagnostics, with reports delivered to referrers within 48 hours. Wit...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1018,7 +1018,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/enfield-mri-centre",
-    "description": "1.5T Siemens Aera MRI...",
+    "description": "Enfield MRI Centre is open 7 days a week and we have been running our MRI service for over 20 years. We offer fast access to high quality, rapid diagn...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1026,15 +1026,15 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/exeter-pet-ct-centre",
-    "description": "Siemens Biograph Vision PET-CT...",
-    "image": "",
+    "description": "Located within Royal Devon and Exeter Hospital...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/65d4b8f5f7ce9a19dfce555c_exeter111-min.png",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/freeman-hospital-pet-ct-centre",
-    "description": "GE Discovery 710 MI DR PET-CT...",
+    "description": "Located in Freeman Hospital, Alliance Medical Newcastle PET-CT Centre provides fast access to high-quality PET-CT diagnostics for NHS, private medical...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1043,14 +1043,14 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/guildford-pet-ct-centre",
     "description": "GE Discovery MI 5-Ring Gen 2 Digital PET-CT‍...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/637e134a56cdc64d32b88dd5_guildford-pet-ct.png",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/jack-brignall-pet-ct-centre",
-    "description": "Siemens Biograph mCT Flow PET-CT...",
+    "description": "Welcome to The Jack Brignall PET-CT Centre. Opened in 2014 and based at Castle Hill hospital in East Yorkshire, we provide fast access to high-quality...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1058,15 +1058,15 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/kings-heath-community-diagnostic-centre",
-    "description": "CT and MRI...",
-    "image": "",
+    "description": "Kings Heath CDC opened at the end of 2024 as a new, purpose-built Community Diagnostic Centre, providing fast access to high-quality CT and MRI diagno...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66a0e0764cafcdeb0b0a3312_Alliance%20Kings%20Heath%20Installation_111.jpeg",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/maidstone-pet-ct-centre",
-    "description": "GE Discovery MI DR PET-CT...",
+    "description": "Located in Maidstone Hospital, we provide fast access to high quality PET-CT scans for: NHS, Private Medical Insurance and Private Self-Pay patients. ...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1074,7 +1074,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/norfolk-and-norwich-pet-ct-centre",
-    "description": "Digital PET-CT scanner...",
+    "description": "Located within Norfolk and Norwich University Hospital...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1091,14 +1091,14 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/oldham-pet-ct-centre",
     "description": "Siemens Biograph Vision 450 Digital PET-CT...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/67bf37c8d64b5f7a49446887_Alliance%20Oldham%20PETCT_1%202.jpeg",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/plymouth-pet-ct-centre",
-    "description": "GE Discovery MI DR PET-CT...",
+    "description": "Located in Derriford Hospital, we provide fast access to high-quality PET-CT scans for NHS, private medical insurance and self-pay patients. Reports a...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1106,15 +1106,15 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/portsmouth-community-diagnostic-centre",
-    "description": "Modern, patient-centric environment...",
-    "image": "",
+    "description": "The Portsmouth Community Diagnostic Centre (CDC) is a joint initiative between Portsmouth Hospitals University NHS Trust (PHU) and Alliance Medical (A...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/69a5c376ce5cdbc43c2ac6b6_ALL-MED-OldhamCDC-02430%202.jpeg",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/portsmouth-pet-ct-centre",
-    "description": "SIEMENS PET-CT...",
+    "description": "Welcome to Portsmouth PET-CT Centre. Opened in 2015 and based at Queen Alexandra Hospital, we provide fast access to high-quality PET-CT diagnostics f...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1122,7 +1122,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/preston-pet-ct-centre",
-    "description": "GE Discovery 710 PET-CT...",
+    "description": "Located in Royal Preston Hospital, Alliance Medical Preston PET-CT Centre provides fast access to high-quality CT and PET-CT diagnostics for NHS, priv...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1130,15 +1130,15 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/sheffield-pet-ct-centre",
-    "description": "GE OMNI Legend...",
-    "image": "",
+    "description": "Located in Northern General Hospital, Alliance Medical Sheffield PET-CT Centre provides fast access to high-quality CT (with/without contrast) and PET...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/676413f3d63962d4610baa8c_Scanner%20Large.jpeg",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/sidcup-mri-unit",
-    "description": "2 x GE Voyager 1.5T...",
+    "description": "Welcome to Sidcup MRI Unit, where we provide fast access to high-quality MRI scans to patients in the local area. Since our opening in 1998, we have g...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1146,7 +1146,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/sidcup-pet-ct-centre",
-    "description": "GE Discover MI 4 Ring Digital PET-CT...",
+    "description": "Located at Queen Mary's Hospital, patients have access to our sophisticated GE Discovery MI 4 Ring Digital PET-CT scanner which reduces scan time by h...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1154,7 +1154,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/south-tees-pet-ct-centre",
-    "description": "GE Discovery 710   PET-CT...",
+    "description": "Located within James Cook University Hospital...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1162,15 +1162,15 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/south-tyneside-integrated-diagnostic-centre",
-    "description": "MRI, CT and PET-CT...",
-    "image": "",
+    "description": "Welcome to our new £10 million Integrated Diagnostic Centre at South Tyneside, our friendly, expert teams will serve thousands of patients across the ...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6512dea97bb29c900d0843fe_Photo%20South%20Tyneside%20%26%20Sunderland%20IDC%201%20(1)cROPPED1.jpg",
     "category": "Center",
     "priority": 100
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/southampton-pet-ct-centre",
-    "description": "GE Discovery MI DR PET-CT...",
+    "description": "Located within Southampton University Hospital...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1178,7 +1178,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/southend-pet-ct-centre",
-    "description": "GE OMNI 16PET-CT...",
+    "description": "Welcome to Southend PET-CT Centre. Based at Southend Hospital in Essex, we provide fast access to high-quality PET-CT diagnostics for NHS, Private Med...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1186,7 +1186,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/taunton-diagnostic-centre",
-    "description": "Philips 3T Elition MRI...",
+    "description": "Alliance Medical began running Taunton Diagnostic Centre in November 2022, in partnership with Somerset NHS Foundation Trust. We provide fast access t...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1194,7 +1194,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/taunton-pet-ct-centre",
-    "description": "GE Discovery MI DR PET-CT...",
+    "description": "Alliance Medical Taunton Centre provides fast access to high-quality PET-CT diagnostics, with reports delivered to referrers within 48 hours. Located ...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1202,7 +1202,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/turner-diagnostic-centre",
-    "description": "2 Wide bore MRI scanners...",
+    "description": "Only 3T MRI scanner in the Essex/Suffolk area...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1210,7 +1210,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/west-middlesex-mri-centre",
-    "description": "SIGNA Voyager 1.5T MRI...",
+    "description": "Located within West Middlesex University Hospital...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1218,7 +1218,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/wigan-pet-ct-centre",
-    "description": "GE Discovery 710 PET-CT...",
+    "description": "Located within Royal Albert Edward Infirmary...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1226,7 +1226,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/woking-community-diagnostic-centre",
-    "description": "Wide Bore Philips 5300 1.5T MRI...",
+    "description": "Woking CDC opened in June 2025 near to Woking Community Hospital....",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1234,7 +1234,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/wythenshawe-hospital",
-    "description": "3T Siemens Skyra...",
+    "description": "Alliance Medical Wythenshawe provides fast access to high-quality CT and MRI diagnostics for NHS, private medical insurance and private self-pay patie...",
     "image": "",
     "category": "Center",
     "priority": 100
@@ -1242,7 +1242,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/addenbrookes-hospital",
-    "description": "...",
+    "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1282,7 +1282,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/birmingham-pet-ct-centre",
-    "description": "...",
+    "description": "Queen Elizabeth Medical CentreBirminghamB15 2TH...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1290,7 +1290,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/bradford-pet-ct-centre",
-    "description": "...",
+    "description": "Duckworth LaneBradfordWest YorkshireBD9 6RJ...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1314,7 +1314,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/clatterbridge-centre-for-oncology-wirral",
-    "description": "...",
+    "description": "Clatterbridge RoadWirral MerseysideBebingtonCH63 4JY...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1322,7 +1322,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/cumberland-infirmary",
-    "description": "...",
+    "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1386,7 +1386,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/kings-heath-community-diagnostic-centre",
-    "description": "...",
+    "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1410,7 +1410,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/lincoln-county-hospital",
-    "description": "...",
+    "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1490,7 +1490,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/royal-liverpool-university-hospital",
-    "description": "...",
+    "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1498,7 +1498,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/royal-stoke-university-hospital",
-    "description": "...",
+    "description": "Lime BuildingCity GeneralStoke on TrentStaffordshireST4 6QG...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1506,7 +1506,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/royal-united-hospital-bath",
-    "description": "...",
+    "description": "NHS Foundation TrustCombe ParkBathBA1 3NG...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1546,7 +1546,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/south-tyneside-integrated-diagnostic-centre",
-    "description": "...",
+    "description": "South Tyneside and Sunderland Integrated Diagnostic Centre...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1594,7 +1594,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/truro-pet-ct",
-    "description": "...",
+    "description": "Royal Cornwall HospitalPenventinnie Lane, TreliskeTruroCornwallTR1 3LQ...",
     "image": "",
     "category": "Center",
     "priority": 80
@@ -1643,7 +1643,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/case-study/alzheimers-uk-and-nhs-trusts",
     "description": "National clinical research programme into early diagnosis of Alzheimer’s disease...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6332fe9fa020d62540ce11c8_alzheimers-image.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1659,7 +1659,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/case-study/molecular-imaging-collaborative-network",
     "description": "Helping close the gap in cancer survivorship through enhanced diagnostics...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61dfed47ca6b79ed2bb7472b_map2a.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -1779,7 +1779,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/bone-densitometry-dexa",
     "description": "The equipment aims a low dose of X-rays at the bones being tested and performs calculations that give a highly accurate measurement of the amount of m...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb6697b758d11fee05b6f_dexa.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1787,7 +1787,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/computed-tomography-ct",
     "description": "CT has been in widespread use since the 1970s and is used to image many diseases and injuries....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb2b5618e0a050cc6f91f_ct.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1795,7 +1795,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/eos-ct",
     "description": "‍EOS is a novel upright CT scanner utilising Nobel Prize winning, ultra-sensitive x-ray detector technology....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb7dcf95dcc3364400fc1_eos-ct.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1803,7 +1803,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/fluoroscopy",
     "description": "In its simplest form, a fluoroscope consists of an X-ray source and fluorescent screen between which a patient is placed. Specialist equipment records...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb72f2936c2583cb9ae5a_fluoroscopy.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1811,7 +1811,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/magnetic-resonance-imaging-mri",
     "description": "MRI has become the investigation of choice for many neurological and musculoskeletal conditions and is used in all areas of the body. It helps identif...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635faee5b59636d3ac7e8582_mri.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1819,7 +1819,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/open-and-upright-mri",
     "description": "Open and Upright MRI permits fully weight-bearing imaging, leading to earlier detection and a more accurate diagnosis in a comfortable, non-claustroph...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb83b482d4a414e1edb4d_open-upright-mri.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1827,7 +1827,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/pet-ct",
     "description": "PET/CT is a diagnostic imaging technique used mainly in oncology, neurology, cardiology, infection and inflammation, and in planning surgery and treat...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb428b165560e21fcaccf_pet-ct.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1835,15 +1835,15 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/ultrasound",
     "description": "Ultrasound scanning is a diagnostic tool used to examine many different parts of the body including the liver, pelvic organs, kidneys and gallbladder....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb5d341528aac3af497c9_ultrasound.jpg",
     "category": "Page",
     "priority": 10
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/modalities/x-ray",
-    "description": "It’s important to tell us before if you:...",
-    "image": "",
+    "description": "Locate your nearest scan centre providing the imaging service you require....",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/635fb4e1618e0a4ebbc71c0b_x-ray.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -1851,7 +1851,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/2024-hsj-partnership-awards",
     "description": "Alliance Medical is delighted to announce that we’ve been shortlisted for three categories at the HSJ Partnership Awards: Long Term Partnership with t...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/657897876d1a88501ea8f846_P4693%20AML%20HSJ%20Nomination%20graphic%20FINAL-min.png",
     "category": "News",
     "priority": 30
   },
@@ -1875,7 +1875,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/alliance-medical-celebrates-one-year-partnership-with-somerset-county-cricket-club",
     "description": "Alliance Medical is proud to celebrate the first anniversary of our partnership with Somerset County Cricket Club (SCCC) – supporting the team with ad...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68d51d423feb7e8d65d70823_Screenshot%202025-09-25%20at%2011.31.19%20Large.jpeg",
     "category": "News",
     "priority": 30
   },
@@ -1883,7 +1883,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/alliance-medical-house-of-commons",
     "description": "Alliance Medical were delighted to be invited to the House of Commons to show our support for the THET policy report: Experts in Our Midst. The THET r...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/65af8cfa9590b831c4f447ce_AM_HOC_FULL.png",
     "category": "News",
     "priority": 30
   },
@@ -1891,7 +1891,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/alliance-medical-ltd-begins-running-the-taunton-diagnostic-centre",
     "description": "From today, 1 November, Alliance Medical Ltd has begun running the Taunton Diagnostic Centre....",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611d3a6938dfb11d639642_DSC_7835_1.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63611e172c76ed65ed6d6f24_DSC_7829_1.jpg",
     "category": "News",
     "priority": 30
   },
@@ -1907,7 +1907,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/alliance-medical-opens-the-uks-first-static-pet-ct-within-a-community-diagnostic-centre",
     "description": "Sir Richard Leese CBE, Chair of NHS Greater Manchester Integrated Care Board, officially unveiled the UK’s first permanent PET-CT facility located wit...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/67e6c1fde7d323f33a92d763_1740586294240.jpeg",
     "category": "News",
     "priority": 30
   },
@@ -1930,7 +1930,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/celebrating-national-apprenticeship-week-2025",
-    "description": "‍...",
+    "description": "We believe that knowledge, skills and expertise are vital in delivering quality care and diagnostics. That’s why we are continually investing in the w...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/67ac6754f0510e62e865faa6_P4951%20-%20AML%20Apprentice%20montage%20post%20V1.jpg",
     "category": "News",
     "priority": 30
@@ -1939,7 +1939,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/celebrating-oldham-cdcs-1st-birthday",
     "description": "On Tuesday 19th December, Oldham CDC celebrated one year of service. Opened in partnership with Northern Care Alliance NHS Foundation Trust, we’ve del...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/65a9193fcf743bfaa968fdab_oldham1-min.png",
     "category": "News",
     "priority": 30
   },
@@ -1947,7 +1947,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/community-diagnostic-centre-to-open-in-oldham",
     "description": "A new Community Diagnostic Centre (CDC) in Oldham will welcome its first patients later this month....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63a03c44c2f1f44796a75fab_CDC%20Artist%27s%20impression.jpg",
     "category": "News",
     "priority": 30
   },
@@ -1955,7 +1955,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/ct-phantom-a-new-training-tool",
     "description": "To meet the demands for an increase in CT services during the COVID Pandemic Alliance Medical have developed an internal training programme designed t...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61e44ba33357d532361235de_ct-phantom.jpg",
     "category": "News",
     "priority": 30
   },
@@ -1963,7 +1963,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/first-ever-mobile-imaging-unit-with-in-patient-facilities",
     "description": "AllianceMedical and Expandable Healthcare today announced the launch of Mobile Medical Plusin the UK, a new diagnostic imaging solution that combines ...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61e44c547ba197d1a95bb7ed_mmp.jpg",
     "category": "News",
     "priority": 30
   },
@@ -1971,7 +1971,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/ge-healthcare-and-alliance-medical-collaborate-to-improve-patient-access-to-diagnostics-and-enhance-radiology-productivity-using-data-analytics-and-ai",
     "description": "Through our innovative solution we aim to improve outcomes, access and healthcare delivery for patients. The goal is to enable the best possible patie...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/627bcf8d8ba7f75e5558206d_ge-am-3.jpg",
     "category": "News",
     "priority": 30
   },
@@ -1979,7 +1979,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/guildford-one-year-on-from-ground-breaking",
     "description": "Located on Surrey Research Park, Alliance Medical's modern, dedicated PET-CT Centre in Guildford serves patients in Guildford, Surrey and the South Ea...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63517846b640ab05d35eaae2_IMG_0145%20copy.jpg",
     "category": "News",
     "priority": 30
   },
@@ -2003,7 +2003,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/laingbuisson-award",
     "description": "Our entry - ‘Oldham CDC: A partnership for success!’ is a collaborative effort with our incredible partners Northern Care Alliance NHS Foundation Trus...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/655f7e86f93d07546329fe58_20231116_LAINGBUISSON_AAWARDS_003%20(1).jpg",
     "category": "News",
     "priority": 30
   },
@@ -2027,7 +2027,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/life-radiopharma-f-con-gmbh-signs-an-agreement-with-zag-zyklotron-ag",
     "description": "Life Radiopharma f-con GmbH has signed an agreement with ZAG Zyklotron AG - a spin-off of KIT (formerly Karlsruhe Institute of Environment and Technol...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61e4489fb12bd56a3e006940_life-zag.jpg",
     "category": "News",
     "priority": 30
   },
@@ -2051,7 +2051,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/new-cardiac-mri-scanner-craned-into-alliance-medical-marylebone",
     "description": "Scanner type: Siemens Magnetom Sola 1.5 Cardiovascular Edition....",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/65af8de6062b998c188dde72_20240120_122404%20Large.jpeg",
     "category": "News",
     "priority": 30
   },
@@ -2059,7 +2059,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/new-digital-pet-ct-scanner-coming-to-guildford",
     "description": "Alliance Medical are delighted to announce that in April 2022 we will be opening the doors of our new state of the art, digital PET-CT unit at the Sur...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61cca3286c8c4a70d2660cc7_new-pet-ct-scanner.jpg",
     "category": "News",
     "priority": 30
   },
@@ -2067,7 +2067,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/new-state-of-the-art-digital-pet-ct-centre",
     "description": "Alliance Medical are delighted to announce that on the 23rd July 2020 we will be opening the doors of our new state of the art, digital PET-CT unit at...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61e44abd9622903677ab9796_sidcup.jpg",
     "category": "News",
     "priority": 30
   },
@@ -2107,7 +2107,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/uk-radiopharmacy-expansion",
     "description": "Alliance Medical Limited is pleased to announce the expansion of its UK radiopharmacy division, (Alliance Medical Radiopharmacy) with the opening of i...",
-    "image": "",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61e447ae1de5a92b26041840_news-radiopharma.jpg",
     "category": "News",
     "priority": 30
   },
@@ -2130,184 +2130,184 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/calcium-scoring",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/cardiac-ct",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/cardiac-mri",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/cdc",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/colon-ct",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/cone-beam-ct",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/ct",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/dexa",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/eos-ct",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/ferriscan-mri",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/fluoroscopy",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/heartflow-ffr-ct-analysis",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/mr-arthrogram",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/mri",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/mri-breast-scan",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/mri-research",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/mri-spectroscopy",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/musculoskeletal-imaging",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/open-and-upright-mri",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/paediatric-mri",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/pet-ct",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/ultrasound",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-type/x-ray",
-    "description": "Hills Road, Cambridge, CB2 0QQ...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61f7d1eae38a8782bdb13c0c_addenbrookes-banner.jpg",
+    "description": "London Road, Ashford, Middlesex, TW15 3AA...",
+    "image": "",
     "category": "Service",
     "priority": 70
   },
@@ -2323,7 +2323,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/cardiac-mri-stress-perfusion-patient-guide",
     "description": "Confirmation: There is an enormous demand for these tests and it is important for you to confirm your appointment by calling the unit prior to your ap...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66d0601854e7fd7dc947326c_66ab9413694a29c5ef121997_66ab937e3145f607fc7e3e3b_SAP_Alliance_Medical_Marylebone-62%20Large.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2331,7 +2331,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/comments-concerns-and-complaints-patient-guide",
     "description": "We always aim to provide you with the very best in quality and care. Sometimes we may not achieve this or meet your expectations. Should this happen, ...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab649ca2aa56b60c69e149_66ab6471bb24a759c6fe9c95_ALL_Med_Taunton_DSC09266.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2339,7 +2339,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/contrast-injection-patient-guide",
     "description": "Contrast dyes that are given to patients having an MRI or CT scan are usually given by injection into a vein in your arm or hand. Occasionally this in...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -2347,7 +2347,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/corticosteroid-injections-patient-guide",
     "description": "This information page answers some of the questions that you may have about having a corticosteroid injection....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab66e4baa14d606af0e88d_66ab66e080b52f6bcf02ac0c_SAP_Alliance_Medical_Marylebone-32.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2355,7 +2355,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/ct-colonography-ctc-patient-guide",
     "description": "Computed tomography Colonography (CTC) is a CT scan that looks at the large bowel (colon) and abdomen....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab9413694a29c5ef121997_66ab937e3145f607fc7e3e3b_SAP_Alliance_Medical_Marylebone-62.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2363,7 +2363,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/ct-coronary-angiography-ctca-patient-guide",
     "description": "A CT (computerised tomography) scan is an X-ray test that allows us to take detailed images of the body....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab95a6ee7cd9f287cc61c7_66ab95a0c71b7582d83bbbec_Screenshot%25202024-08-01%2520at%252015.03.03.png",
     "category": "Page",
     "priority": 10
   },
@@ -2371,7 +2371,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/ct-patient-guide",
     "description": "CT stands for computed tomography. It uses X-rays to produce a cross-sectional, or ‘slice’, image of the inside of your body....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab90724366f62d1efb0967_66ab903b42006dfba668e923_ALLMed_Tyneside-DSC00820.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2379,7 +2379,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/dexa-patient-guide",
     "description": "A small team of radiography staff will look after you during your visit and a suitably trained and qualified member of staff will carry out the scan....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/665de893b842208717883a29_1.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -2387,7 +2387,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/dobutamine-stress-cardiac-mri-patient-guide",
     "description": "A stress CMR is a test which allows us to look at your heart at rest and also during ‘stress’ when it is beating faster. The main aim of the test is t...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66d07b4505772139431183eb_66ab969b5c3ade1f7d9438ea_66ab95e815ea379111c7b2c4_SAP_South_Tynesdie_Sunderland_IDC-42%20Large.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2395,7 +2395,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/eos-patient-guide",
     "description": "EOS (EOS dual source upright CT scanner) is an imaging system designed for advanced orthopaedic care of the spine, hips and knees. The full body pictu...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/665ede2b8891db8c79aae2ba_1.png",
     "category": "Page",
     "priority": 10
   },
@@ -2403,7 +2403,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/gadolinium-contrast-injection-patient-guide",
     "description": "Gadolinium is a clear colourless fluid that is used to make the images clearer during an MRI scan and help with diagnosis. Aradiologist (a specialist ...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -2411,7 +2411,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/hyoscine-butylbromide-buscopan-r-patient-guide",
     "description": "As your bowel is constantly moving in a motion known as peristalsis, this can make the MRI or CT scan pictures blurry....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -2419,7 +2419,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/infection-control-patient-information",
     "description": "Infections can be introduced and spread by all of us. By following the points on this page, you can help us to prevent vulnerable individuals picking ...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -2427,7 +2427,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/mri-patient-guide",
     "description": "MRI means ‘Magnetic Resonance Imaging’. It is an imaging technique using a strong magnetic field to produce high-quality pictures of the internal stru...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab91a04366f62d1efbda25_66ab90f470d2f5d3455928d0_ALLMed_Tyneside-DSC00534.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2435,7 +2435,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/open-mri-patient-guide",
     "description": "A magnetic resonance imaging (MRI) scan is a powerful diagnostic tool that uses a strong magnetic field to produce high-quality images in multiple pla...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab925d027390c42346ffbd_Jean%20Sitting%2012.jpg",
     "category": "Page",
     "priority": 10
   },
@@ -2443,7 +2443,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/patient-information---protecting-using-and-storing",
     "description": "Alliance Medical understands that your personal data is entrusted to us and appreciates the importance of protecting and respecting your privacy. We c...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab627b7180bbf1f23983e9_66ab624a7db80d5f382de98b_ALL_Med_Taunton_DSC09059.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2451,7 +2451,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/pet-ct-patient-guide",
     "description": "A PET-CT scan is made up of two types of scan or ‘imaging’. PET (Positron Emission Tomography) uses very small amounts of a radioactive tracer – injec...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab93338945a76679057863_66ab9317d04f9a66deeed512_Alliance-Medical-09614.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2459,7 +2459,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/pet-ct-patient-injection-guide",
     "description": "Production of your individual injection is performed using specialist equipment called a Cyclotron and usually begins at 1pm....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ace4242f92eacae2d3d14e_66ace41d5f5f78572b6a988a_ALLMed_Tyneside-DSC00866.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2467,7 +2467,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/platelet-rich-plasma-prp-patient-guide",
     "description": "Although blood is mainly a liquid (called plasma), it also contains small solid components (red cells, white cells, and platelets.) The platelets are ...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab6ec768d8085e0fd0d382_66ab6e5cf742048088ffeb24_ALL_Med_Oxford_DSC09753.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2475,7 +2475,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/radiation-and-you---the-benefits-and-risks-explained",
     "description": "Your Doctor or Healthcare Professional has asked that you have a test which uses ionising radiation....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "",
     "category": "Page",
     "priority": 10
   },
@@ -2483,7 +2483,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/ultrasound-patient-guide",
     "description": "An X-ray is a test which is used to produce images of your tissues, bones and organs....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab7a31f22fc97577b68414_66ab79efd2f3c7629ceac8af_ALLMed_Tyneside-DSC00459.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -2491,7 +2491,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/urodynamic-studies-patient-guide",
     "description": "Urodynamics are used to detect the cause of incontinence, urgency and frequency or emptying disorders, or when surgery may be required to correct prol...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/64b66773257b91236b3797e2_heroimageallaince_scanner.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab66e4baa14d606af0e890_66ab66b92d20f4cbd79d2c45_SAP_Alliance_Medical_Marylebone-33.jpeg",
     "category": "Page",
     "priority": 10
   },
