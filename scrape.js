@@ -86,7 +86,7 @@ async function scrapeSites() {
                                            srcLower.includes('placeholder');
 
                             // Filter 2: Reject if explicitly marked smaller than 600px
-                            const isTooSmall = (widthAttr > 0 && widthAttr < 1200);
+                            const isTooSmall = (widthAttr > 0 && widthAttr < 1800);
 
                             // Filter 3: Reject thumbnails inside the file name (e.g., img-150x150.jpg)
                             const isThumbnail = /-\d{2,3}x\d{2,3}\./.test(srcLower) || srcLower.includes('thumb');
