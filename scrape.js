@@ -60,44 +60,96 @@ async function scrapeSites() {
                     }
 
                     // ==========================================
-                    // 📸 STRICT IMAGE SCRAPING LOGIC (600px+)
+                    // 📸 BULLETPROOF IMAGE SCRAPING LOGIC
                     // ==========================================
+                    
+                    // 1. Try Meta Image first (usually the highest quality representation 1200x630+)
                     let imageUrl = $('meta[property="og:image"]').attr('content') || 
                                    $('meta[name="twitter:image"]').attr('content');
+                    
+                    // Reject the meta image if it's explicitly just a site logo
+                    if (imageUrl && imageUrl.toLowerCase().includes('logo')) {
+                        imageUrl = null;
+                    }
                     
                     if (!imageUrl) {
                         const images = $('img');
                         
                         for (let i = 0; i < images.length; i++) {
-                            const src = $(images[i]).attr('src') || '';
+                            const imgEl = $(images[i]);
+                            let src = imgEl.attr('src') || '';
                             const srcLower = src.toLowerCase();
+                            const classNames = (imgEl.attr('class') || '').toLowerCase();
+                            const altText = (imgEl.attr('alt') || '').toLowerCase();
                             
-                            // Check the HTML width attribute
-                            const widthAttr = parseInt($(images[i]).attr('width')) || 0;
-                            
-                            // Filter 1: Webflow UI junk & base64
+                            // 🛑 RUTHLESS JUNK FILTER: Checks URL, CSS Classes, AND Alt Text!
                             const isJunk = src.startsWith('data:') || 
                                            srcLower.includes('.svg') || 
-                                           srcLower.includes('logo') || 
-                                           srcLower.includes('icon') || 
-                                           srcLower.includes('close') || 
-                                           srcLower.includes('arrow') || 
+                                           srcLower.includes('logo') || classNames.includes('logo') || altText.includes('logo') ||
+                                           srcLower.includes('icon') || classNames.includes('icon') || altText.includes('icon') ||
+                                           srcLower.includes('avatar') || classNames.includes('avatar') || altText.includes('avatar') ||
+                                           srcLower.includes('close') || classNames.includes('close') ||
+                                           srcLower.includes('arrow') || classNames.includes('arrow') ||
                                            srcLower.includes('bg') || 
-                                           srcLower.includes('placeholder');
+                                           srcLower.includes('placeholder') ||
+                                           classNames.includes('nav') || classNames.includes('footer');
 
-                            // Filter 2: Reject if explicitly marked smaller than 600px
-                            const isTooSmall = (widthAttr > 0 && widthAttr < 1800);
-
-                            // Filter 3: Reject thumbnails inside the file name (e.g., img-150x150.jpg)
+                            // 🛑 THUMBNAIL FILTER: Reject explicit thumbnail file names
                             const isThumbnail = /-\d{2,3}x\d{2,3}\./.test(srcLower) || srcLower.includes('thumb');
 
-                            if (src && !isJunk && !isTooSmall && !isThumbnail) {
-                                // Must be a standard photo format
-                                if (srcLower.includes('.jpg') || srcLower.includes('.jpeg') || srcLower.includes('.png') || srcLower.includes('.webp')) {
-                                    imageUrl = src;
-                                    break; 
+                            // If it fails the junk check, move immediately to next image
+                            if (!src || isJunk || isThumbnail) continue;
+
+                            // 🛑 FORMAT FILTER: Must be a standard photo format
+                            if (!srcLower.match(/\.(jpg|jpeg|png|webp)(\?.*)?$/)) continue;
+
+                            let finalImageSrc = src;
+                            let resolvedWidth = 0;
+
+                            // ✅ WEBFLOW SRCSET PARSER
+                            // Webflow generates responsive images. We read the srcset to find the exact widths available
+                            // and grab the absolute largest resolution image Webflow offers.
+                            const srcset = imgEl.attr('srcset');
+                            if (srcset) {
+                                const sources = srcset.split(',').map(s => s.trim().split(' '));
+                                let largestWidth = 0;
+                                let largestSrc = src;
+
+                                sources.forEach(source => {
+                                    if (source.length === 2) {
+                                        const w = parseInt(source[1].replace('w', '')) || 0;
+                                        if (w > largestWidth) {
+                                            largestWidth = w;
+                                            largestSrc = source[0];
+                                        }
+                                    }
+                                });
+
+                                if (largestWidth > 0) {
+                                    resolvedWidth = largestWidth;
+                                    finalImageSrc = largestSrc; 
                                 }
                             }
+
+                            // ✅ FALLBACK TO HTML WIDTH ATTRIBUTE
+                            if (resolvedWidth === 0) {
+                                const rawWidth = imgEl.attr('width');
+                                if (rawWidth) {
+                                    resolvedWidth = parseInt(rawWidth, 10) || 0;
+                                }
+                            }
+
+                            // 🛑 THE "NO GUESSING" BULLETPROOF RULE (>= 1600px)
+                            // If resolvedWidth is STILL 0, it means the image has no width tag and no srcset.
+                            // In Webflow, real photos almost always have a srcset. Tiny UI graphics don't.
+                            // If it's 0, we assume it's small garbage and reject it.
+                            if (resolvedWidth < 1600) {
+                                continue; 
+                            }
+
+                            // If it survived all of this, it is a certified massive image!
+                            imageUrl = finalImageSrc;
+                            break; 
                         }
 
                         // Convert relative paths to absolute URLs
