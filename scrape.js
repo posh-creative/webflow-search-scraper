@@ -12,12 +12,12 @@ const CONFIG =[
         sitemap: 'https://www.alliancemedical.co.uk/sitemap.xml',
         rules:[
             { match: '/scanning-centres/', priority: 100, category: 'Center' },
-            { match: '/scan-centres/', priority: 100, category: 'Center' },
-            { match: '/scan-type/', priority: 100, category: 'Service' },
-            { match: '/diagnostic-services/', priority: 100, category: 'Service' },
+            { match: '/scan-centres/', priority: 80, category: 'Center' },
+            { match: '/scan-type/', priority: 70, category: 'Service' },
+            { match: '/diagnostic-services/', priority: 60, category: 'Service' },
             { match: '/for-patients/', priority: 50, category: 'Patient Info' },
-            { match: '/for-referrers/', priority: 50, category: 'Referrer Info' },
-            { match: '/news/', priority: 20, category: 'News' },
+            { match: '/for-referrers/', priority: 40, category: 'Referrer Info' },
+            { match: '/news/', priority: 30, category: 'News' },
             { match: '/blog/', priority: 20, category: 'Blog' }
         ]
     },
