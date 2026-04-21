@@ -3,11 +3,14 @@ const cheerio = require('cheerio');
 const xml2js = require('xml2js');
 const fs = require('fs');
 
-const CONFIG = [
+// ==========================================
+// 🚀 CLIENT CONFIGURATION
+// ==========================================
+const CONFIG =[
     {
         name: 'alliance',
         sitemap: 'https://www.alliancemedical.co.uk/sitemap.xml',
-        rules: [
+        rules:[
             { match: '/scanning-centres/', priority: 100, category: 'Center' },
             { match: '/scan-centres/', priority: 100, category: 'Center' },
             { match: '/scan-type/', priority: 100, category: 'Service' },
@@ -17,13 +20,22 @@ const CONFIG = [
             { match: '/news/', priority: 20, category: 'News' },
             { match: '/blog/', priority: 20, category: 'Blog' }
         ]
+    },
+    {
+        name: 'poshcreative',
+        sitemap: 'https://www.poshcreative.co.uk/sitemap.xml',
+        rules:[
+            { match: '/portfolio/', priority: 100, category: 'Work' },
+            { match: '/services/', priority: 80, category: 'Services' }
+        ]
     }
 ];
+// ==========================================
 
 async function scrapeSites() {
     for (const site of CONFIG) {
         console.log(`\n🔍 Starting scrape for: ${site.name.toUpperCase()}`);
-        const searchIndex = [];
+        const searchIndex =[];
 
         try {
             const { data: sitemapXml } = await axios.get(site.sitemap);
@@ -31,7 +43,7 @@ async function scrapeSites() {
             const sitemapObj = await parser.parseStringPromise(sitemapXml);
 
             const urls = sitemapObj.urlset.url.map(entry => entry.loc[0]);
-            console.log(`Found ${urls.length} URLs for ${site.name}.`);
+            console.log(`Found ${urls.length} URLs for ${site.name}. Scraping pages...`);
 
             for (const url of urls) {
                 try {
@@ -39,6 +51,7 @@ async function scrapeSites() {
                     const $ = cheerio.load(html);
 
                     const title = $('title').text() || $('h1').first().text();
+                    
                     let description = $('meta[name="description"]').attr('content') || 
                                       $('meta[property="og:description"]').attr('content') || '';
                     
@@ -47,37 +60,47 @@ async function scrapeSites() {
                     }
 
                     // ==========================================
-                    // 📸 THE ANTI-JUNK IMAGE SCRAPER
+                    // 📸 STRICT IMAGE SCRAPING LOGIC (600px+)
                     // ==========================================
                     let imageUrl = $('meta[property="og:image"]').attr('content') || 
                                    $('meta[name="twitter:image"]').attr('content');
                     
                     if (!imageUrl) {
                         const images = $('img');
+                        
                         for (let i = 0; i < images.length; i++) {
                             const src = $(images[i]).attr('src') || '';
                             const srcLower = src.toLowerCase();
                             
-                            // Kill words that mean it's a UI element
-                            const isJunk = srcLower.includes('logo') || 
+                            // Check the HTML width attribute
+                            const widthAttr = parseInt($(images[i]).attr('width')) || 0;
+                            
+                            // Filter 1: Webflow UI junk & base64
+                            const isJunk = src.startsWith('data:') || 
+                                           srcLower.includes('.svg') || 
+                                           srcLower.includes('logo') || 
                                            srcLower.includes('icon') || 
                                            srcLower.includes('close') || 
                                            srcLower.includes('arrow') || 
                                            srcLower.includes('bg') || 
-                                           srcLower.includes('menu') || 
-                                           srcLower.includes('placeholder') || 
-                                           src.startsWith('data:');
+                                           srcLower.includes('placeholder');
 
-                            if (src && !isJunk) {
-                                // Double check it looks like a real photo format
+                            // Filter 2: Reject if explicitly marked smaller than 600px
+                            const isTooSmall = (widthAttr > 0 && widthAttr < 600);
+
+                            // Filter 3: Reject thumbnails inside the file name (e.g., img-150x150.jpg)
+                            const isThumbnail = /-\d{2,3}x\d{2,3}\./.test(srcLower) || srcLower.includes('thumb');
+
+                            if (src && !isJunk && !isTooSmall && !isThumbnail) {
+                                // Must be a standard photo format
                                 if (srcLower.includes('.jpg') || srcLower.includes('.jpeg') || srcLower.includes('.png') || srcLower.includes('.webp')) {
                                     imageUrl = src;
-                                    break; // Found a real photo! Stop searching.
+                                    break; 
                                 }
                             }
                         }
 
-                        // Make sure the URL is absolute
+                        // Convert relative paths to absolute URLs
                         if (imageUrl && !imageUrl.startsWith('http')) {
                             const domain = new URL(url).origin;
                             imageUrl = `${domain}${imageUrl.startsWith('/') ? '' : '/'}${imageUrl}`;
@@ -85,9 +108,11 @@ async function scrapeSites() {
                     }
                     // ==========================================
 
+                    // Assign Priority & Category
                     let priority = 10;
                     let category = "Page";
                     let matchedRule = false;
+                    
                     for (const rule of site.rules) {
                         if (url.includes(rule.match)) {
                             priority = rule.priority;
