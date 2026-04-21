@@ -8,10 +8,9 @@ const fs = require('fs');
 // ==========================================
 const CONFIG = [
     {
-        name: 'alliance', // This creates alliance-index.json
+        name: 'alliance',
         sitemap: 'https://www.alliancemedical.co.uk/sitemap.xml',
         rules: [
-            // Matches the URL path to assign priority and category
             { match: '/scanning-centres/', priority: 100, category: 'Center' },
             { match: '/scan-centres/', priority: 100, category: 'Center' },
             { match: '/scan-type/', priority: 100, category: 'Service' },
@@ -23,8 +22,8 @@ const CONFIG = [
         ]
     },
     {
-        name: 'poshcreative', // This creates poshcreative-index.json
-        sitemap: 'https://www.poshcreative.co.uk/sitemap.xml', // Replace with real sitemap
+        name: 'poshcreative',
+        sitemap: 'https://www.poshcreative.co.uk/sitemap.xml',
         rules: [
             { match: '/portfolio/', priority: 100, category: 'Work' },
             { match: '/services/', priority: 80, category: 'Services' }
@@ -52,6 +51,7 @@ async function scrapeSites() {
                     const $ = cheerio.load(html);
 
                     const title = $('title').text() || $('h1').first().text();
+                    
                     let description = $('meta[name="description"]').attr('content') || 
                                       $('meta[property="og:description"]').attr('content') || '';
                     
@@ -60,28 +60,47 @@ async function scrapeSites() {
                     }
 
                     // ==========================================
-                    // 📸 NEW: IMAGE SCRAPING LOGIC
+                    // 📸 SMARTER IMAGE SCRAPER
                     // ==========================================
                     let imageUrl = $('meta[property="og:image"]').attr('content') || 
                                    $('meta[name="twitter:image"]').attr('content');
                     
                     if (!imageUrl) {
-                        // Fallback: Find the first actual image that isn't a logo or SVG
-                        const firstImg = $('img').not('[src*="logo"], [src*=".svg"]').first().attr('src');
-                        if (firstImg) {
-                            // Ensure it's a full absolute URL
+                        // Find all images on the page
+                        const images = $('img');
+                        
+                        for (let i = 0; i < images.length; i++) {
+                            const src = $(images[i]).attr('src') || $(images[i]).attr('data-src') || '';
+                            const className = $(images[i]).attr('class') || '';
+
+                            // Filter out garbage: base64, svgs, logos, icons, UI elements
+                            const isGarbage = src.startsWith('data:') || 
+                                              src.toLowerCase().includes('.svg') ||
+                                              src.toLowerCase().includes('logo') ||
+                                              src.toLowerCase().includes('icon') ||
+                                              src.toLowerCase().includes('avatar') ||
+                                              className.toLowerCase().includes('icon') ||
+                                              className.toLowerCase().includes('logo');
+
+                            if (src && !isGarbage) {
+                                imageUrl = src; // We found a real image!
+                                break; // Stop searching
+                            }
+                        }
+
+                        // Ensure the image link works by adding the domain if it's a relative path
+                        if (imageUrl && !imageUrl.startsWith('http')) {
                             const domain = new URL(url).origin;
-                            imageUrl = firstImg.startsWith('http') ? firstImg : `${domain}${firstImg.startsWith('/') ? '' : '/'}${firstImg}`;
+                            imageUrl = `${domain}${imageUrl.startsWith('/') ? '' : '/'}${imageUrl}`;
                         }
                     }
                     // ==========================================
 
-                    // Default Fallback
+                    // Assign Priorities
                     let priority = 10;
                     let category = "Page";
-
-                    // Check URL against the site's rules
                     let matchedRule = false;
+                    
                     for (const rule of site.rules) {
                         if (url.includes(rule.match)) {
                             priority = rule.priority;
@@ -91,12 +110,10 @@ async function scrapeSites() {
                         }
                     }
 
-                    // If it didn't match a deep folder, see if it's a Top Level Page (e.g., domain.com/about)
-                    // We check this by counting the slashes in the URL
                     if (!matchedRule) {
-                        const path = url.replace(/^(?:\/\/|[^/]+)*\//, ''); // removes domain
+                        const path = url.replace(/^(?:\/\/|[^/]+)*\//, ''); 
                         if (!path.includes('/')) {
-                            priority = 100; // Top level pages get 100!
+                            priority = 100; 
                             category = "Main Page";
                         }
                     }
@@ -105,7 +122,7 @@ async function scrapeSites() {
                         title: title.trim(),
                         url: url, 
                         description: description.trim(),
-                        image: imageUrl || '', // Adds the image to the JSON
+                        image: imageUrl || '', 
                         category: category,
                         priority: priority
                     });
@@ -116,7 +133,6 @@ async function scrapeSites() {
                 }
             }
 
-            // Save specific JSON file for this site
             fs.writeFileSync(`${site.name}-index.json`, JSON.stringify(searchIndex, null, 2));
             console.log(`🎉 Saved ${site.name}-index.json!`);
 
