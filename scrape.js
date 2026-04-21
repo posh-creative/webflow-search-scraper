@@ -59,6 +59,23 @@ async function scrapeSites() {
                         description = $('p').first().text().trim().substring(0, 150) + '...';
                     }
 
+                    // ==========================================
+                    // 📸 NEW: IMAGE SCRAPING LOGIC
+                    // ==========================================
+                    let imageUrl = $('meta[property="og:image"]').attr('content') || 
+                                   $('meta[name="twitter:image"]').attr('content');
+                    
+                    if (!imageUrl) {
+                        // Fallback: Find the first actual image that isn't a logo or SVG
+                        const firstImg = $('img').not('[src*="logo"], [src*=".svg"]').first().attr('src');
+                        if (firstImg) {
+                            // Ensure it's a full absolute URL
+                            const domain = new URL(url).origin;
+                            imageUrl = firstImg.startsWith('http') ? firstImg : `${domain}${firstImg.startsWith('/') ? '' : '/'}${firstImg}`;
+                        }
+                    }
+                    // ==========================================
+
                     // Default Fallback
                     let priority = 10;
                     let category = "Page";
@@ -88,6 +105,7 @@ async function scrapeSites() {
                         title: title.trim(),
                         url: url, 
                         description: description.trim(),
+                        image: imageUrl || '', // Adds the image to the JSON
                         category: category,
                         priority: priority
                     });
