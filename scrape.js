@@ -3,9 +3,6 @@ const cheerio = require('cheerio');
 const xml2js = require('xml2js');
 const fs = require('fs');
 
-// ==========================================
-// 🚀 ADD NEW CLIENT WEBSITES HERE
-// ==========================================
 const CONFIG = [
     {
         name: 'alliance',
@@ -20,17 +17,8 @@ const CONFIG = [
             { match: '/news/', priority: 20, category: 'News' },
             { match: '/blog/', priority: 20, category: 'Blog' }
         ]
-    },
-    {
-        name: 'poshcreative',
-        sitemap: 'https://www.poshcreative.co.uk/sitemap.xml',
-        rules: [
-            { match: '/portfolio/', priority: 100, category: 'Work' },
-            { match: '/services/', priority: 80, category: 'Services' }
-        ]
     }
 ];
-// ==========================================
 
 async function scrapeSites() {
     for (const site of CONFIG) {
@@ -51,7 +39,6 @@ async function scrapeSites() {
                     const $ = cheerio.load(html);
 
                     const title = $('title').text() || $('h1').first().text();
-                    
                     let description = $('meta[name="description"]').attr('content') || 
                                       $('meta[property="og:description"]').attr('content') || '';
                     
@@ -60,35 +47,37 @@ async function scrapeSites() {
                     }
 
                     // ==========================================
-                    // 📸 SMARTER IMAGE SCRAPER
+                    // 📸 THE ANTI-JUNK IMAGE SCRAPER
                     // ==========================================
                     let imageUrl = $('meta[property="og:image"]').attr('content') || 
                                    $('meta[name="twitter:image"]').attr('content');
                     
                     if (!imageUrl) {
-                        // Find all images on the page
                         const images = $('img');
-                        
                         for (let i = 0; i < images.length; i++) {
-                            const src = $(images[i]).attr('src') || $(images[i]).attr('data-src') || '';
-                            const className = $(images[i]).attr('class') || '';
+                            const src = $(images[i]).attr('src') || '';
+                            const srcLower = src.toLowerCase();
+                            
+                            // Kill words that mean it's a UI element
+                            const isJunk = srcLower.includes('logo') || 
+                                           srcLower.includes('icon') || 
+                                           srcLower.includes('close') || 
+                                           srcLower.includes('arrow') || 
+                                           srcLower.includes('bg') || 
+                                           srcLower.includes('menu') || 
+                                           srcLower.includes('placeholder') || 
+                                           src.startsWith('data:');
 
-                            // Filter out garbage: base64, svgs, logos, icons, UI elements
-                            const isGarbage = src.startsWith('data:') || 
-                                              src.toLowerCase().includes('.svg') ||
-                                              src.toLowerCase().includes('logo') ||
-                                              src.toLowerCase().includes('icon') ||
-                                              src.toLowerCase().includes('avatar') ||
-                                              className.toLowerCase().includes('icon') ||
-                                              className.toLowerCase().includes('logo');
-
-                            if (src && !isGarbage) {
-                                imageUrl = src; // We found a real image!
-                                break; // Stop searching
+                            if (src && !isJunk) {
+                                // Double check it looks like a real photo format
+                                if (srcLower.includes('.jpg') || srcLower.includes('.jpeg') || srcLower.includes('.png') || srcLower.includes('.webp')) {
+                                    imageUrl = src;
+                                    break; // Found a real photo! Stop searching.
+                                }
                             }
                         }
 
-                        // Ensure the image link works by adding the domain if it's a relative path
+                        // Make sure the URL is absolute
                         if (imageUrl && !imageUrl.startsWith('http')) {
                             const domain = new URL(url).origin;
                             imageUrl = `${domain}${imageUrl.startsWith('/') ? '' : '/'}${imageUrl}`;
@@ -96,11 +85,9 @@ async function scrapeSites() {
                     }
                     // ==========================================
 
-                    // Assign Priorities
                     let priority = 10;
                     let category = "Page";
                     let matchedRule = false;
-                    
                     for (const rule of site.rules) {
                         if (url.includes(rule.match)) {
                             priority = rule.priority;
