@@ -403,7 +403,7 @@
     "title": "News and press",
     "url": "https://www.alliancemedical.co.uk/about-us/news-and-press",
     "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a32bb964676469559136ea5_TDC%20Reloc(2).jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a59e59af451b1e790bca52b_6a58e90c2fd4a49f2e6d2736_Von%20Gahlen_074%20Large.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -1001,6 +1001,14 @@
   },
   {
     "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/scanning-centres/cheshunt-community-hospital-x-ray",
+    "description": "Welcome to the Cheshunt Community Hospital X-Ray. Since 2018, we provide fast access to high-quality, general x-rays for NHS and Self-Pay patients. We...",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
+    "category": "Center",
+    "priority": 100
+  },
+  {
+    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/corby-community-diagnostic-centre",
     "description": "Increased capacity for local NHS patients...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68c2d6c89611142be3d58c22_ALL-MED-OldhamCDC-02414%20Large%20Medium.jpeg",
@@ -1065,6 +1073,14 @@
   },
   {
     "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/scanning-centres/leeds-pet-ct-centre",
+    "description": "Opened in 2010 and located in St James' Hospital, we provide fast access to high-quality PET-CT diagnostics for: NHS, Private Self-Pay and Private Med...",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
+    "category": "Center",
+    "priority": 100
+  },
+  {
+    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/maidstone-pet-ct-centre",
     "description": "Located in Maidstone Hospital, we provide fast access to high quality PET-CT scans for: NHS, Private Medical Insurance and Private Self-Pay patients. ...",
     "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
@@ -1114,7 +1130,7 @@
   {
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/portsmouth-pet-ct-centre",
-    "description": "Welcome to Portsmouth PET-CT Centre. Opened in 2015 and based at Queen Alexandra Hospital, we provide fast access to high-quality PET-CT diagnostics f...",
+    "description": "Welcome to Portsmouth PET-CT Centre. We provide fast access to high-quality PET-CT diagnostics for NHS, Private Medical Insurance and Private Self-Pay...",
     "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
     "category": "Center",
     "priority": 100
@@ -1889,6 +1905,14 @@
   },
   {
     "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/alliance-medical-invests-in-advanced-ai-technology-at-turner-diagnostic-centre-to-support-faster-clearer-imaging",
+    "description": "Alliance Medical has completed an upgrade to its relocatable MRI scanner at Turner Diagnostic Centre in Colchester, introducing advanced Deep Resolve ...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a32bb964676469559136ea5_TDC%20Reloc(2).jpg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/alliance-medical-joins-business-against-cancer-roundtable-hosted-by-macmillan-cancer-support",
     "description": "Macmillan Cancer Support’s Business Against Cancer roundtable was a big day for moving towards a future where people living with cancer are supported ...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/69f0cd6cef5470142d02fbfe_Business%20Against%20Cancer%20Group%20Photo%20April%202026%20Large.jpeg",
@@ -1988,6 +2012,14 @@
     "url": "https://www.alliancemedical.co.uk/news/guildford-one-year-on-from-ground-breaking",
     "description": "Located on Surrey Research Park, Alliance Medical's modern, dedicated PET-CT Centre in Guildford serves patients in Guildford, Surrey and the South Ea...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63517846b640ab05d35eaae2_IMG_0145%20copy.jpg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/health-minister-officially-opens-corby-community-diagnostic-centre",
+    "description": "Health Minister Karin Smyth MP has officially opened the new £11.7 million Community Diagnostic Centre (CDC) in Corby, marking a major milestone in im...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68d5448e4b917d227fcbf96e_3.%20The%20Minister%20cuts%20the%20ribbon%20to%20officially%20open%20Corby%20CDC.JPG",
     "category": "News",
     "priority": 20
   },
@@ -2116,6 +2148,14 @@
     "url": "https://www.alliancemedical.co.uk/news/uk-radiopharmacy-expansion",
     "description": "Alliance Medical Limited is pleased to announce the expansion of its UK radiopharmacy division, (Alliance Medical Radiopharmacy) with the opening of i...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/61e447ae1de5a92b26041840_news-radiopharma.jpg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/university-of-manchester-launches-radiotracer-partnership-with-alliance-medical",
+    "description": "Alliance Medical and the University of Manchester have forged a new partnership to fast-track the development of the next generation of radiotracers....",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68a7099386d9ebb00fe26895_IMG_5703%20edit%20Large.jpeg",
     "category": "News",
     "priority": 20
   },
@@ -2318,6 +2358,14 @@
     "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6213847d5e2dc3b23a9a12f3_site-search-button-bg.jpg",
     "category": "Service",
     "priority": 100
+  },
+  {
+    "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/centre/alliance-medical-harley-street",
+    "description": "Our centre based in London’s prestigious medical district provides access to the only open and upright MRI scanner on Harley Street. This allows for o...",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/662a619ae3634676e3b03caa_London%20Ma%20-%20GE%20Discovery%20MI%20Gen%202%20Digital%20PET-CT%201.jpeg",
+    "category": "Page",
+    "priority": 10
   },
   {
     "title": "Alliance Medical",
