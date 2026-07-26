@@ -403,7 +403,7 @@
     "title": "News and press",
     "url": "https://www.alliancemedical.co.uk/about-us/news-and-press",
     "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a59e59af451b1e790bca52b_6a58e90c2fd4a49f2e6d2736_Von%20Gahlen_074%20Large.jpeg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a63532729cb43c54423afa2_image018-2%20Large.jpeg",
     "category": "Page",
     "priority": 10
   },
@@ -1075,7 +1075,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/leeds-pet-ct-centre",
     "description": "Opened in 2010 and located in St James' Hospital, we provide fast access to high-quality PET-CT diagnostics for: NHS, Private Self-Pay and Private Med...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a60db16b8070f6865f257ac_6764131d56d9b3a1a9sc2429a_dom_headshot%20Medium.jpeg",
     "category": "Center",
     "priority": 100
   },
@@ -1131,7 +1131,7 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scanning-centres/portsmouth-pet-ct-centre",
     "description": "Welcome to Portsmouth PET-CT Centre. We provide fast access to high-quality PET-CT diagnostics for NHS, Private Medical Insurance and Private Self-Pay...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/69a5c376ce5cdbc43c2ac6b6_ALL-MED-OldhamCDC-02430%202.jpeg",
     "category": "Center",
     "priority": 100
   },
@@ -1892,6 +1892,14 @@
     "url": "https://www.alliancemedical.co.uk/news/alliance-medical-group-announce-appointment-of-imran-farid",
     "description": "Imran joins with more than two decades of experience working across global healthcare systems, partnerships, medtech and pharma. His appointment refle...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/69eb742ccf3e650360491aa5_P5276%20AML%20-%20April%20-%20Imran%E2%80%99s%20appointment2%201.jpg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/alliance-medical-group-expands-european-radiopharmacy-network-with-acquisition-of-radboud-translational-medicine",
+    "description": "Building on a long-standing strategic partnership, the transaction strengthens Alliance Medical's manufacturing footprint, expands its Northwest Europ...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a59e59af451b1e790bca52b_6a58e90c2fd4a49f2e6d2736_Von%20Gahlen_074%20Large.jpeg",
     "category": "News",
     "priority": 20
   },
