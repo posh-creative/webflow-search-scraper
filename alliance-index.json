@@ -859,7 +859,7 @@
     "title": "Educational Resources",
     "url": "https://www.alliancemedical.co.uk/educational-resources",
     "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/68835ad42b6d1fd78d0931f0_P4718%20AM%20-%20MR%20Safety%20week%20header.jpg",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a69f13c60b364508a4c0bfd_MR%20Safety%20week%20graphic.jpg",
     "category": "Main Page",
     "priority": 100
   },
@@ -1985,6 +1985,14 @@
   },
   {
     "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/colchester-united-and-alliance-medical-strengthen-community-partnership-with-new-mri-facility-at-jobserve-community-stadium",
+    "description": "Colchester United is pleased to announce that Alliance Medical has established a new mobile MRI facility at the JobServe Community Stadium, further st...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a63532729cb43c54423afa2_image018-2%20Large.jpeg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/community-diagnostic-centre-to-open-in-oldham",
     "description": "A new Community Diagnostic Centre (CDC) in Oldham will welcome its first patients later this month....",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63a03c44c2f1f44796a75fab_CDC%20Artist%27s%20impression.jpg",
@@ -2556,6 +2564,14 @@
     "url": "https://www.alliancemedical.co.uk/leaflets/urodynamic-studies-patient-guide",
     "description": "Urodynamics are used to detect the cause of incontinence, urgency and frequency or emptying disorders, or when surgery may be required to correct prol...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab66e4baa14d606af0e890_66ab66b92d20f4cbd79d2c45_SAP_Alliance_Medical_Marylebone-33.jpeg",
+    "category": "Page",
+    "priority": 10
+  },
+  {
+    "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/educational-resources/8-checks-you-must-do-before-an-mri-scan-to-keep-patients-safe",
+    "description": "As part of MR Safety Week, we've created a practical poster focusing on eight key checks that support safe MRI practice before a patient enters the sc...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6a69f13c60b364508a4c0bfd_MR%20Safety%20week%20graphic.jpg",
     "category": "Page",
     "priority": 10
   },
