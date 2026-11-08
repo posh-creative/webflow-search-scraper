@@ -416,22 +416,6 @@
     "priority": 100
   },
   {
-    "title": "Open and Upright MRI",
-    "url": "https://www.alliancemedical.co.uk/find-centre/centres/open-and-upright-mri",
-    "description": "Please reset the regions filter or select a different scan type....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6213847d5e2dc3b23a9a12f3_site-search-button-bg.jpg",
-    "category": "Page",
-    "priority": 10
-  },
-  {
-    "title": "Open and Upright MRI request",
-    "url": "https://www.alliancemedical.co.uk/request-scan/open-and-upright-mri-request",
-    "description": "Please provide your permission for us to contact you with information, products or services that you request from us or which we feel may interest you...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6213847d5e2dc3b23a9a12f3_site-search-button-bg.jpg",
-    "category": "Page",
-    "priority": 10
-  },
-  {
     "title": "Our CDC solution",
     "url": "https://www.alliancemedical.co.uk/cdc/our-cdc-solution",
     "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
@@ -792,14 +776,6 @@
     "priority": 100
   },
   {
-    "title": "Private patients London",
-    "url": "https://www.alliancemedical.co.uk/private-patients-london",
-    "description": "Take control of your health with a scan at one of our London centres....",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/67a5cc50d5cd872bda3983b5_192601680_4118215404956604_2525436330848338525_n%201.jpeg",
-    "category": "Main Page",
-    "priority": 100
-  },
-  {
     "title": "BNMS",
     "url": "https://www.alliancemedical.co.uk/rsm",
     "description": "Discuss how we’re unlocking the power of PET-CT, advancing digital technology, and improving patient pathways and tracer availability....",
@@ -965,22 +941,6 @@
     "description": "Vascular disease refers to disorders of the peripheral arterial circulation outside of the brain or heart. It can be assessed by our advanced scanning...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/63596e946e621b1d9f7f6ec9_vascular.jpg",
     "category": "Service",
-    "priority": 100
-  },
-  {
-    "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/scanning-centres/alliance-medical-harley-street",
-    "description": "Alliance Medical Harley Street provides patients with fast access to high quality CT, Open MRI and EOS imaging and diagnostic services. We welcome pat...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
-    "category": "Center",
-    "priority": 100
-  },
-  {
-    "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/scanning-centres/alliance-medical-marylebone",
-    "description": "MRI, Ultrasound and X-ray and Cardiac MRI...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/63be83d35a4305b71ad0b103_allianceBlank.jpg",
-    "category": "Center",
     "priority": 100
   },
   {
@@ -1259,22 +1219,6 @@
     "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/scan-centres/addenbrookes-hospital",
     "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/65bbad09c030bbf1bff9fddc_Frame%20135.png",
-    "category": "Center",
-    "priority": 100
-  },
-  {
-    "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/scan-centres/alliance-medical-harley-street",
-    "description": "Welcome to our London, Harley Street centre. We have developed a reputation for providing a superior diagnostic imaging service dedicated to the needs...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/65bbad09c030bbf1bff9fddc_Frame%20135.png",
-    "category": "Center",
-    "priority": 100
-  },
-  {
-    "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/scan-centres/alliance-medical-marylebone",
-    "description": "Welcome to our London, Marylebone centre. The centre has recently been redeveloped to complement our existing London imaging suite, strengthening our ...",
     "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/65bbad09c030bbf1bff9fddc_Frame%20135.png",
     "category": "Center",
     "priority": 100
@@ -1777,6 +1721,14 @@
   },
   {
     "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/leaders/robert-heathcote",
+    "description": "Join our newsletter to stay up to date with news from Alliance Medical...",
+    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6213847d5e2dc3b23a9a12f3_site-search-button-bg.jpg",
+    "category": "Page",
+    "priority": 10
+  },
+  {
+    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaders/ruth-cowling",
     "description": "Ruth joined Alliance Medical as their Director of Service Development in 2021. Her primary focus is looking at the future roadmap for PET-CT and she i...",
     "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/6213847d5e2dc3b23a9a12f3_site-search-button-bg.jpg",
@@ -2105,9 +2057,25 @@
   },
   {
     "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/lifesaving-service-launched-to-catch-cancer-sooner-for-90-000-people",
+    "description": "Lung cancer is the deadliest cancer in Yorkshire, with deaths double those of breast and prostate cancer. There are often no signs or symptoms of lung...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6ae33bbbe3af294d63ed5d13_A7106141.jpg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/news/lung-cancer-screening-launches-in-shropshire-to-help-save-lives-and-tackle-health-inequalities",
     "description": "On 1 December, a new Lung Cancer Screening (LCS) Programme was launched for people living in Shropshire, Telford and Wrekin. The aim of the LCS Progra...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/69415af0de681f434c5cf14a_P4927%20AML%20Lung%20Cancer%20Screening%20Blog%20Header.jpg",
+    "category": "News",
+    "priority": 20
+  },
+  {
+    "title": "Alliance Medical",
+    "url": "https://www.alliancemedical.co.uk/news/lung-cancer-screening-programme-helps-smokers-quit",
+    "description": "The programme not only aims to detect lung cancer at its earliest stages, when treatment is more effective and more lives can be saved, but also provi...",
+    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/6ae35a0ccbb17e990808a999_STW%20Stop%20Smoking%20graphic.jpg",
     "category": "News",
     "priority": 20
   },
@@ -2393,22 +2361,6 @@
   },
   {
     "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/centre/alliance-medical-harley-street",
-    "description": "Our centre based in London’s prestigious medical district provides access to the only open and upright MRI scanner on Harley Street. This allows for o...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/662a619ae3634676e3b03caa_London%20Ma%20-%20GE%20Discovery%20MI%20Gen%202%20Digital%20PET-CT%201.jpeg",
-    "category": "Page",
-    "priority": 10
-  },
-  {
-    "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/centre/alliance-medical-marylebone",
-    "description": "Alliance Medical Marylebone is a state-of-the-art medical centre which provides patients with fast access to high quality Digital PET-CT, MRI, Cardiac...",
-    "image": "https://cdn.prod.website-files.com/6176af756ad6c7e621ce732a/662a619ae3634676e3b03caa_London%20Ma%20-%20GE%20Discovery%20MI%20Gen%202%20Digital%20PET-CT%201.jpeg",
-    "category": "Page",
-    "priority": 10
-  },
-  {
-    "title": "Alliance Medical",
     "url": "https://www.alliancemedical.co.uk/leaflets/cardiac-mri-stress-perfusion-patient-guide",
     "description": "Confirmation: There is an enormous demand for these tests and it is important for you to confirm your appointment by calling the unit prior to your ap...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66d0601854e7fd7dc947326c_66ab9413694a29c5ef121997_66ab937e3145f607fc7e3e3b_SAP_Alliance_Medical_Marylebone-62%20Large.jpeg",
@@ -2516,14 +2468,6 @@
     "url": "https://www.alliancemedical.co.uk/leaflets/mri-patient-guide",
     "description": "MRI means ‘Magnetic Resonance Imaging’. It is an imaging technique using a strong magnetic field to produce high-quality pictures of the internal stru...",
     "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab91a04366f62d1efbda25_66ab90f470d2f5d3455928d0_ALLMed_Tyneside-DSC00534.jpeg",
-    "category": "Page",
-    "priority": 10
-  },
-  {
-    "title": "Alliance Medical",
-    "url": "https://www.alliancemedical.co.uk/leaflets/open-mri-patient-guide",
-    "description": "A magnetic resonance imaging (MRI) scan is a powerful diagnostic tool that uses a strong magnetic field to produce high-quality images in multiple pla...",
-    "image": "https://cdn.prod.website-files.com/617a8f7358ad2c19aa5e723c/66ab925d027390c42346ffbd_Jean%20Sitting%2012.jpg",
     "category": "Page",
     "priority": 10
   },
